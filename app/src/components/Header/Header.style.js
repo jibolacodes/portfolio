@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background-color: #272422;
+  /* background-color: #272422; */
+
+  background:linear-gradient(45deg, #fe3a7d, #ff7b0a);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12,8 +14,10 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   text-align: center;
+  padding: 20px;
   
   @media only screen and (min-width: 1023px) {
+    padding: 0;
     text-align: start;
     width: 970px;
     display: grid;
@@ -24,7 +28,7 @@ export const Content = styled.div`
 
 export const UserImg = styled.img`
   margin-bottom: 20px;
-  width: 300px;
+  width: 180px;
   clip-path: circle();
 
   @media only screen and (min-width: 1023px) {
@@ -33,7 +37,13 @@ export const UserImg = styled.img`
 `;
 
 export const Info = styled.div`
-  
+  background-color: #272422;
+  padding: 10px;
+  border-radius: 10px;
+  @media only screen and (min-width: 767px) {
+    padding: 30px;
+    border-radius: 30px;
+  }
 `;
 
 export const Text = styled.div`
@@ -122,7 +132,7 @@ export const DownloadBtn = styled.div`
 export const Arrow = styled.img`
   width: 40px;
   position: relative;
-  bottom: -80px;
+  bottom: -60px;
   animation: downward 1s infinite alternate;
 
   @keyframes downward {
