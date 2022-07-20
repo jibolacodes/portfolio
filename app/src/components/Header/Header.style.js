@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  /* background-color: #272422; */
-
   background:linear-gradient(45deg, #fe3a7d, #ff7b0a);
-  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;

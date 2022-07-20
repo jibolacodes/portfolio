@@ -4,15 +4,20 @@ import React from "react";
 import { Wrapper, Content, LogoImg, NavLinks, NavToggle } from "./navbar.style";
 
 // Image
-import Logo from "../../assets/Images/logos/jc_logo_dark.png";
+import Logo from "../../assets/Images/logos/jc_logo_light.png";
+import CloseBtn from "../../assets/Images/icons/times.svg";
+import OpenBtn from "../../assets/Images/icons/bars.svg";
 
 const navLinks = ['home', 'about', 'education', 'skills', 'portfolio', 'contact'];
 
 const Navbar = () => (
   <Wrapper>
     <Content>
-      <LogoImg src={Logo} alt="" />
-      <NavToggle />
+      <h1>Jibolacodes</h1>
+      <NavToggle>
+        <img src={CloseBtn} alt="Close button" />
+        <img src={OpenBtn} alt="Open button" />
+      </NavToggle>
     </Content>
     <NavLinks>
       <ul>
