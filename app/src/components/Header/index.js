@@ -8,7 +8,7 @@ import HeaderImg from '../../assets/Images/userImages/jibolacodes.jpg';
 import ArrowDown from '../../assets/Images/icons/angle-double-down.svg';
 import DownloadIcon from '../../assets/Images/icons/import.svg';
 
-const Header = () => (
+const Header = ({ scrollHeight }) => (
   <Wrapper>
     <Content>
       <UserImg src={HeaderImg} alt="Jibolacodes image" />
@@ -17,6 +17,7 @@ const Header = () => (
         <Text>
           <h3>I'm</h3>
           <h1>Ajibola Akindunbi</h1>
+          <p style={{color: 'white'}}>{scrollHeight}</p>
         </Text>
         <AnimatedText>Front-End Web Developer</AnimatedText>
         <DownloadBtn>
