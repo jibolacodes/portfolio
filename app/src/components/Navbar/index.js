@@ -1,9 +1,11 @@
 // Markup
-import { Wrapper, Content, NavLinks, NavToggle } from "./navbar.style";
+import { Wrapper, Content, Logo, NavLinks, NavToggle } from "./navbar.style";
 
 // Image
 import CloseBtn from "../../assets/Images/icons/times.svg";
 import OpenBtn from "../../assets/Images/icons/bars.svg";
+
+import 'animate.css';
 
 const navLinks = [
   "home",
@@ -19,7 +21,9 @@ const Navbar = ({ show, setShow }) => {
   return (
     <Wrapper>
       <Content>
-        <h1>Jibolacodes</h1>
+        <Logo>
+          <h1>Jibolacodes</h1>
+        </Logo>
         <NavToggle onClick={() => setShow(!show)}>
           {show ? (
             <img src={CloseBtn} alt="Close button" />
@@ -30,7 +34,7 @@ const Navbar = ({ show, setShow }) => {
       </Content>
       {show && (
         <NavLinks>
-          <ul>
+          <ul className=' animate__animated animate__fadeInLeft'>
             {navLinks.map((link) => (
               <li key={link}>
                 <a href={`#${link}`}>{link}</a>
