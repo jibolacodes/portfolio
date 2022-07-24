@@ -2,10 +2,11 @@
 import { Wrapper, Content, Logo, NavLinks, NavToggle } from "./navbar.style";
 
 // Image
-import CloseBtn from "../../assets/Images/icons/times.svg";
-import OpenBtn from "../../assets/Images/icons/bars.svg";
+import CloseBtn from "../../images/times.svg";
+import OpenBtn from "../../images/bars.svg";
 
-import 'animate.css';
+// animations
+import "animate.css";
 
 const navLinks = [
   "home",
@@ -17,7 +18,6 @@ const navLinks = [
 ];
 
 const Navbar = ({ show, setShow }) => {
-
   return (
     <Wrapper>
       <Content>
@@ -34,7 +34,7 @@ const Navbar = ({ show, setShow }) => {
       </Content>
       {show && (
         <NavLinks>
-          <ul className=' animate__animated animate__fadeInLeft'>
+          <ul className="animate__animated animate__fadeInLeft">
             {navLinks.map((link) => (
               <li key={link}>
                 <a href={`#${link}`}>{link}</a>

@@ -4,9 +4,9 @@ import React from 'react';
 import { Wrapper, Content, UserImg, Info, Text, AnimatedText, DownloadBtn, Arrow } from './Header.style';
 
 // Images
-import HeaderImg from '../../assets/Images/userImages/jibolacodes.jpg';
-import ArrowDown from '../../assets/Images/icons/angle-double-down.svg';
-import DownloadIcon from '../../assets/Images/icons/import.svg';
+import HeaderImg from '../../images/jibolacodes.jpg';
+import ArrowDown from '../../images/angle-double-down.svg';
+import DownloadIcon from '../../images/import.svg';
 
 const Header = ({ scrollHeight }) => (
   <Wrapper>
