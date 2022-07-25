@@ -47,6 +47,7 @@ export const Info = styled.div`
 
 export const Text = styled.div`
   margin-bottom: 40px;
+
   h1 {
     font-weight: 600;
     font-size: 2.2em;

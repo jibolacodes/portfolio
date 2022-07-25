@@ -9,7 +9,7 @@ import ArrowDown from '../../images/angle-double-down.svg';
 import DownloadIcon from '../../images/import.svg';
 
 const Header = ({ scrollHeight }) => (
-  <Wrapper>
+  <Wrapper id='home'>
     <Content>
       <UserImg src={HeaderImg} alt="Jibolacodes image" />
 

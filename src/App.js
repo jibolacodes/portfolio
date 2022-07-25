@@ -4,6 +4,7 @@ import { GlobalStyles } from "./GlobalStyles";
 // Components
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import About from './components/About';
 
 function App() {
   const [show, setShow] = useState(true);
@@ -25,13 +26,14 @@ function App() {
   }, [scrollHeight]);
 
   return (
-    <div>
+    <>
       <GlobalStyles />
       {scrollHeight > 15 ? (
         <Navbar show={show} setShow={setShow} windowHeight={scrollHeight} />
       ) : null}
       <Header windowHeight={scrollHeight} />
-    </div>
+      <About />
+    </>
   );
 }
 

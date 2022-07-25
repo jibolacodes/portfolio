@@ -48,7 +48,6 @@ export const NavLinks = styled.nav`
   background-color: white;
   width: 40%;
   height: 100vh;
-  border-top: 2px solid #fe3a7d;
 
   ul {
     list-style-type: none;
