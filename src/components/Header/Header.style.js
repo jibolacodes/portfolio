@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background:linear-gradient(45deg, #fe3a7d, #ff7b0a);
+  background: var(--bg-color);
+  padding: 20px;
   height: 100vh;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;    
+  margin-bottom: 48px;
 `;
 
 export const Content = styled.div`
   text-align: center;
-  padding: 20px;
   
   @media only screen and (min-width: 1023px) {
     padding: 0;
@@ -34,11 +36,9 @@ export const UserImg = styled.img`
 `;
 
 export const Info = styled.div`
-  background-color: #272422;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  
+
   @media only screen and (min-width: 767px) {
     padding: 30px;
     border-radius: 30px;
@@ -49,14 +49,11 @@ export const Text = styled.div`
   margin-bottom: 40px;
 
   h1 {
-    font-weight: 600;
-    font-size: 2.2em;
-    color: #FF9D19;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0 auto;
-    text-shadow: 4px 4px #db2777;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 2.6em;
+    color: var(--bg-color);
+    -webkit-text-stroke: 2px var(--white);
 
     @media only screen and (min-width: 1023px) {
       font-size: 3rem;
@@ -66,7 +63,7 @@ export const Text = styled.div`
   h3 {
     margin-bottom: 10px;
     font-weight: 400;
-    color: rgb(211, 206, 198);
+    color: var(--white);
   }
 `;
 
@@ -75,7 +72,7 @@ export const AnimatedText = styled.div`
   max-width: fit-content;
   font-weight: 400;
   font-size: 1.3em;
-  color: rgb(211, 206, 198);
+  color: var(--white);
   overflow: hidden;
   border-right: 0.15em solid #FF9D19;
   white-space: nowrap;
@@ -92,7 +89,7 @@ export const AnimatedText = styled.div`
 
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #FF9D19 }
+    50% { border-color: var(--white) }
   } 
 
   @media only screen and (min-width: 1023px) {
@@ -102,24 +99,24 @@ export const AnimatedText = styled.div`
 `;
 
 export const DownloadBtn = styled.div`
-  border: 2px dotted #FF9D19;
-  border-radius: 20px;
+  border: 1px solid var(--white);
+  border-radius: 24px;
   width: fit-content;
-  padding: 8px 20px;
+  padding: 12px 24px;
   margin: 1rem auto;
 
   a {
     text-decoration: none;
     font-weight: 500;
-    color: #FF9D19;
+    color: var(--white);
     letter-spacing: 2px;
   }
 
   &:hover {
-    background-color: #FF9D19;
+    background-color: var(--white);
     
     a {
-      color: #272422;
+      color: var(--bg-color);
       font-weight: 700;
     }
   }

@@ -4,7 +4,7 @@ import { GlobalStyles } from "./GlobalStyles";
 // Components
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import About from './components/About';
+import About from "./components/About";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -17,19 +17,13 @@ function App() {
     window.addEventListener("scroll", () =>
       setScrollHeight(document.documentElement.scrollTop)
     );
-    const scrollWidth = document.documentElement.scrollWidth;
-
-    if (scrollWidth < 1024) {
-      setShow(false);
-    }
-    console.log(scrollWidth);
   }, [scrollHeight]);
 
   return (
     <>
       <GlobalStyles />
       {scrollHeight > 15 ? (
-        <Navbar show={show} setShow={setShow} windowHeight={scrollHeight} />
+        <Navbar show={show} setShow={setShow} scrollHeight={scrollHeight} />
       ) : null}
       <Header windowHeight={scrollHeight} />
       <About />

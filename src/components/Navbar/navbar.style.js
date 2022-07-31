@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -16,7 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  background-color: white;
+  background-color: var(--white);
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,13 @@ export const Content = styled.div`
 export const Logo = styled.div`
   h1 {
     font-family: "Neonderthaw", cursive;
-    letter-spacing: 4px;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 32px;
+    }
   }
 `;
 
@@ -45,8 +52,8 @@ export const NavToggle = styled.div`
 `;
 
 export const NavLinks = styled.nav`
-  background-color: white;
-  width: 40%;
+  background-color: var(--white);
+  width: calc(200px - 40px);
   height: 100vh;
 
   ul {
@@ -58,21 +65,24 @@ export const NavLinks = styled.nav`
 
     li {
       padding-left: 20px;
-      font-size: 1.1em;
       display: flex;
       align-items: center;
+      font-size: 1.1em;
+      font-weight: 600;
 
       :hover {
-        background-color: #ff9d19;
+        background-color: var(--bg-color);
+        cursor: pointer;
       }
 
       a {
         text-decoration: none;
         text-transform: capitalize;
-        color: #272422;
+        color: var(--dark-text-color);
+        width: 100%;
 
         :hover {
-          color: white;
+          color: var(--white);
         }
       }
     }
@@ -99,10 +109,10 @@ export const NavLinks = styled.nav`
         padding: 0 10px;
 
         :hover {
-          background-color: #ff9d19;
+          background-color: var(--bg-color);
 
           a {
-            color: white;
+            color: var(--white);
           }
         }
       }

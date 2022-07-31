@@ -1,18 +1,32 @@
 import React from "react";
 
 // Markup
-import { Wrapper, Content, Hero, Description } from "./About.style";
+import { Wrapper, Content, Title, Hero, Description, Button } from "./About.style";
 
 // Image
 import userImg from "../../images/jibolacodes_2.jpg";
 
 const About = () => (
   <Wrapper id="about">
-		<h1>ABOUT ME</h1>
     <Content>
-			<Hero src={userImg} alt='user image' />
-			<Description>This is the description of the user.</Description>
-		</Content>
+      <Title>
+        <h1 className="section--title">ABOUT</h1>
+        <p className="section--title--absolute">about me</p>
+      </Title>
+      <div className="flex__container">
+        <Hero src={userImg} alt="user image" />
+        <Description>
+          <h3>Front-End Developer</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae.
+            Voluptatibus, autem pariatur porro ex consectetur deleniti quod,
+            debitis quia adipisci atque corrupti. Neque possimus non itaque
+            quaerat expedita incidunt.
+          </p>
+          <Button>Hire Me</Button>
+        </Description>
+      </div>
+    </Content>
   </Wrapper>
 );
 

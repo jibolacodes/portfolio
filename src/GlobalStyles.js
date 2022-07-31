@@ -3,14 +3,20 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
     :root {
         --padding: 215px 30px;
+        --page-padding: 48px 15px;
+
+        --bg-color : #00C0C0;
+        --white : #fff;
+        --dark-text-color: #343a40;
+        
+        --font-family: 'Inter', sans-serif;
     }
     body {
-        font-family: 'Josefin sans', sans-serif;
+        font-family: var(--font-family);
     }
     *, ::after, ::before {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
     }
-
 `;

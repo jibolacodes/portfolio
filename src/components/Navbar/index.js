@@ -17,7 +17,8 @@ const navLinks = [
   "contact",
 ];
 
-const Navbar = ({ show, setShow }) => {
+const Navbar = ({ show, setShow, scrollHeight }) => {
+
   return (
     <Wrapper>
       <Content>
@@ -37,7 +38,11 @@ const Navbar = ({ show, setShow }) => {
           <ul className="animate__animated animate__fadeInLeft">
             {navLinks.map((link) => (
               <li key={link}>
-                <a href={`#${link}`}>{link}</a>
+                <a 
+                  href={`#${link}`}
+                  >
+                    {link}
+                  </a>
               </li>
             ))}
           </ul>
