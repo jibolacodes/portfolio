@@ -5,14 +5,14 @@ export const Wrapper = styled.div`
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   @media screen and (min-width: 1024px) {
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 `;
 
@@ -21,9 +21,12 @@ export const Content = styled.div`
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   @media screen and (min-width: 1024px) {
     height: fit-content;
+    box-shadow: none;
   }
 `;
 
@@ -53,8 +56,10 @@ export const NavToggle = styled.div`
 
 export const NavLinks = styled.nav`
   background-color: var(--white);
-  width: calc(200px - 40px);
-  height: 100vh;
+  width: calc(240px - 30px);
+  height: fit-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   ul {
     list-style-type: none;
@@ -66,9 +71,11 @@ export const NavLinks = styled.nav`
     li {
       padding-left: 20px;
       display: flex;
+      justify-content: center;
       align-items: center;
       font-size: 1.1em;
       font-weight: 600;
+
 
       :hover {
         background-color: var(--bg-color);
@@ -80,6 +87,11 @@ export const NavLinks = styled.nav`
         text-transform: capitalize;
         color: var(--dark-text-color);
         width: 100%;
+        /* With Span */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* End of width span */
 
         :hover {
           color: var(--white);
@@ -94,6 +106,7 @@ export const NavLinks = styled.nav`
     padding: 0;
     border-top: none;
     width: fit-content;
+    box-shadow: none;
 
     ul {
       width: 600px;

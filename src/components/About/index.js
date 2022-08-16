@@ -1,7 +1,8 @@
 import React from "react";
 
 // Markup
-import { Wrapper, Content, Title, Hero, Description, Button } from "./About.style";
+import { Wrapper, Content, Title} from "../../PageStyle";
+import { Hero, Description, Button } from "./About.style";
 
 // Image
 import userImg from "../../images/jibolacodes_2.jpg";
@@ -11,7 +12,7 @@ const About = () => (
     <Content>
       <Title>
         <h1 className="section--title">ABOUT</h1>
-        <p className="section--title--absolute">about me</p>
+        <p className="section--title--absolute">about</p>
       </Title>
       <div className="flex__container">
         <Hero src={userImg} alt="user image" />
@@ -20,8 +21,7 @@ const About = () => (
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae.
             Voluptatibus, autem pariatur porro ex consectetur deleniti quod,
-            debitis quia adipisci atque corrupti. Neque possimus non itaque
-            quaerat expedita incidunt.
+            debitis quia adipisci atque corrupti.
           </p>
           <Button>Hire Me</Button>
         </Description>

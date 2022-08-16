@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: var(--bg-color);
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;    
-  margin-bottom: 48px;
+  flex-direction: column;
+ 
+  /* margin-bottom: 48px; */
 `;
 
 export const Content = styled.div`

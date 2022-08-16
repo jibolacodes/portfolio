@@ -14,11 +14,10 @@ const navLinks = [
   "education",
   "skills",
   "portfolio",
-  "contact",
+  "contact me",
 ];
 
 const Navbar = ({ show, setShow, scrollHeight }) => {
-
   return (
     <Wrapper>
       <Content>
@@ -38,11 +37,9 @@ const Navbar = ({ show, setShow, scrollHeight }) => {
           <ul className="animate__animated animate__fadeInLeft">
             {navLinks.map((link) => (
               <li key={link}>
-                <a 
-                  href={`#${link}`}
-                  >
-                    {link}
-                  </a>
+                <a href={`#${link}`}>
+                  <span>{link}</span>
+               </a>
               </li>
             ))}
           </ul>

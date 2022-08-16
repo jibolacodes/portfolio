@@ -1,65 +1,12 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  padding: var(--page-padding);
-`;
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media only screen and (min-width: 1023px) {
-    .flex__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-    }
-  }
-
-`;
-export const Title = styled.section`
-  position: relative;
-  margin-bottom: 24px;
-
-  .section--title {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-weight: 900;
-    font-size: 4em;
-    -webkit-text-stroke: 1px #dee2e6;
-    color: white;
-
-    @media only screen and (min-width: 1023px){
-      font-size: 5em;
-    }
-  }
-  .section--title--absolute {
-    position: absolute;
-    color: var(--bg-color);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 1.5em;
-    font-weight: 900;
-    bottom: 27px;
-    right: 36px;
-
-    @media only screen and (min-width: 1023px){
-      font-size: 1.8em;
-      bottom: 36px;
-      right: 55px;
-    }
-  }
-`;
 export const Hero = styled.img`
   width: 100%;
   border-radius: 5px;
   margin: 0 auto;
  
   @media only screen and (min-width: 426px) {
-    width: 300px;
+    width: 400px;
   }
   @media only screen and (min-width: 1023px){
     width: 360px;
@@ -78,6 +25,7 @@ export const Description = styled.div`
   p {
     color: var(--dark-text-color);
     line-height: 24px;
+    font-size: 16px;
   }
 
   @media only screen and (min-width: 1023px) {
