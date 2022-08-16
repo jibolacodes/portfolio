@@ -1,4 +1,6 @@
+import React from 'react';
 // Markup
+
 import { Wrapper, Content, Logo, NavLinks, NavToggle } from "./navbar.style";
 
 // Image

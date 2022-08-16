@@ -3,11 +3,12 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
     :root {
         --padding: 215px 30px;
-        --page-padding: 98px 20px;
+        --page-padding: 98px 20px 0px 20px;
 
         --bg-color : #00C0C0;
         --white : #fff;
         --dark-text-color: #343a40;
+        --grey-text-color: #6c757d;
         
         --font-family: 'Inter', sans-serif;
     }

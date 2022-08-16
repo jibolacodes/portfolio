@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: var(--page-padding);
+  min-height: 100vh;
 
-  @media only screen and (min-width: 1023px) {
-    padding-top: 120px;
+  @media only screen and (min-width: 769px) {
+    padding: 120px 80px 0 80px;
+    min-height: auto;
   }
 `;
 
@@ -34,7 +36,7 @@ export const Title = styled.section`
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-weight: 900;
-    font-size: 2.6em;
+    font-size: 3em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #dee2e6;
     color: white;
@@ -50,7 +52,7 @@ export const Title = styled.section`
     font-size: 1.5em;
     font-weight: 900;
     position: absolute;
-    bottom: 12px;
+    bottom: 16px;
     margin: 0 auto;
     left: 0;
     right: 0;

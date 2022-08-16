@@ -20,7 +20,7 @@ const Header = ({ scrollHeight }) => (
         </Text>
         <AnimatedText>Front-End Web Developer</AnimatedText>
         <DownloadBtn>
-          <a href='#'>Download CV</a>
+          <a href='#download'>Download CV</a>
         </DownloadBtn>
       </Info>
       
