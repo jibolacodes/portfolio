@@ -35,15 +35,15 @@ const schools = [
   },
 ];
 
-const About = () => (
+const Education = () => (
   <Wrapper id="education">
     <Content>
       <Title>
         <h1 className="section--title">Education</h1>
         <p className="section--title--absolute">Education</p>
       </Title>
-      {schools.map((school) => (
-        <Section>
+      {schools.map((school, id) => (
+        <Section key={id}>
           <Bullet>
             <span></span>
           </Bullet>
@@ -66,4 +66,4 @@ const About = () => (
   </Wrapper>
 );
 
-export default About;
+export default Education;

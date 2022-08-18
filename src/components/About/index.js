@@ -12,7 +12,7 @@ const About = () => (
     <Content>
       <Title>
         <h1 className="section--title">ABOUT</h1>
-        <p className="section--title--absolute">about</p>
+        <p className="section--title--absolute">about me</p>
       </Title>
       <div className="flex__container">
         <Hero src={userImg} alt="user image" />

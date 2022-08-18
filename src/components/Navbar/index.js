@@ -19,7 +19,7 @@ const navLinks = [
   "contact me",
 ];
 
-const Navbar = ({ show, setShow, scrollHeight }) => {
+const Navbar = ({ show, setShow}) => {
   return (
     <Wrapper>
       <Content>
