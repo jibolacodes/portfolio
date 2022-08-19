@@ -20,7 +20,8 @@ function App() {
     document.documentElement.scrollTop
   );
   const [projects, setProjects] = useState(projectsData);
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
+  const [modalPictures, setModalPictures] = useState([]);
 
   // For Navbar
   useEffect(() => {
@@ -42,7 +43,7 @@ function App() {
           ? { ...project, isButton: !project.isButton }
           : { ...project, isButton: false };
       })
-    );
+    )
   };
 
   const handleClose = () => {
@@ -55,8 +56,13 @@ function App() {
 
   const handleModal = () => {
     setModal(!modal);
-    console.log("click")
   };
+
+  const pullProjectData = (data) => {
+    setModalPictures(data.modalPictures);
+  };
+
+  console.log(modalPictures)
 
   return (
     <main>
@@ -72,9 +78,12 @@ function App() {
         projects={projects}
         handleModal={handleModal}
         modal={modal}
+        pullProjectData={pullProjectData}
       />
       <Contact />
-      {modal && <WorkModal closeModal={handleModal} />}
+      {modal && (
+        <WorkModal closeModal={handleModal} images={modalPictures} />
+      )}
     </main>
   );
 }
