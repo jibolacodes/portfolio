@@ -6,40 +6,16 @@ import { Container, Image } from "./Work.style";
 //Components
 import Button from "../WorkButton";
 
-const projects = [
-  {
-    id: 1,
-    title: "project-a",
-    image: "portfolio_sample_1.jpg",
-  },
-  {
-    id: 2,
-    title: "project-a",
-    image: "portfolio_sample_2.jpg",
-  },
-  {
-    id: 3,
-    title: "project-a",
-    image: "portfolio_sample_3.jpg",
-  },
-  {
-    id: 4,
-    title: "project-a",
-    image: "portfolio_sample_4.jpg",
-  },
-];
-
-const Work = ({ showButton, handleClick }) => (
+const Work = ({ handleClick, projects, handleClose }) => (
   <Container>
-    {projects.map((project) => (
-      <Image>
+    {projects.map((project, id) => (
+      <Image key={project.id}>
         <img
           src={`../../images/${project.image}`}
           alt={project.title}
-          key={project.id}
-          onClick={() => handleClick()}
+          onClick={() => handleClick(project.id)}
         />
-        {showButton && project.id ? <Button /> : null}
+        {project.isButton && <Button handleClose={handleClose} />}
       </Image>
     ))}
   </Container>

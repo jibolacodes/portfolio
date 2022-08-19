@@ -10,10 +10,15 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 
+// Data
+import projectsData from "./data";
+
 function App() {
   const [show, setShow] = useState(true);
-  const [scrollHeight, setScrollHeight] = useState(document.documentElement.scrollTop);
-  const [showButton, setShowButton] = useState(true);
+  const [scrollHeight, setScrollHeight] = useState(
+    document.documentElement.scrollTop
+  );
+  const [projects, setProjects] = useState(projectsData);
 
   // For Navbar
   useEffect(() => {
@@ -25,26 +30,41 @@ function App() {
     if (window.innerWidth < 1024) {
       window.onload = () => setShow(false);
     }
+  }, []);
 
-  }, [scrollHeight]);
+  // For opening modal link in portfolio
+  const handleClick = (id) => {
+    setProjects((oldProjects) =>
+      oldProjects.map((project) => {
+        return project.id === id
+          ? { ...project, isButton: !project.isButton }
+          : { ...project, isButton: false };
+      })
+    );
+  };
 
-  const handleClick = () => {
-    setShowButton(!showButton);
-  }
-
+  const handleClose = () => {
+    setProjects((oldProjects) =>
+      oldProjects.map((project) => {
+        return { ...project, isButton: false };
+      })
+    );
+  };
 
   return (
     <>
       <GlobalStyles />
-        {scrollHeight > 15 ? (
-          <Navbar show={show} setShow={setShow}/>
-        ) : null}
-        <Header windowHeight={scrollHeight} />
-        <About />
-        <Education />
-        <Skills />
-        <Portfolio showButton={showButton} handleClick={handleClick}/>
-        <Contact />
+      {scrollHeight > 15 ? <Navbar show={show} setShow={setShow} /> : null}
+      <Header windowHeight={scrollHeight} />
+      <About />
+      <Education />
+      <Skills />
+      <Portfolio
+        handleClick={handleClick}
+        handleClose={handleClose}
+        projects={projects}
+      />
+      <Contact />
     </>
   );
 }
