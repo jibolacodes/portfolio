@@ -6,7 +6,7 @@ import { Container, Image } from "./Work.style";
 //Components
 import Button from "../WorkButton";
 
-const Work = ({ handleClick, projects, handleClose }) => (
+const Work = ({ handleClick, projects, handleClose, handleModal }) => (
   <Container>
     {projects.map((project, id) => (
       <Image key={project.id}>
@@ -15,7 +15,9 @@ const Work = ({ handleClick, projects, handleClose }) => (
           alt={project.title}
           onClick={() => handleClick(project.id)}
         />
-        {project.isButton && <Button handleClose={handleClose} />}
+        {project.isButton && (
+          <Button handleClose={handleClose} openModal={handleModal} />
+        )}
       </Image>
     ))}
   </Container>

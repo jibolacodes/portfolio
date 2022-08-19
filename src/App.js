@@ -9,6 +9,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import WorkModal from "./components/WorkModal";
 
 // Data
 import projectsData from "./data";
@@ -19,6 +20,7 @@ function App() {
     document.documentElement.scrollTop
   );
   const [projects, setProjects] = useState(projectsData);
+  const [modal, setModal] = useState(true);
 
   // For Navbar
   useEffect(() => {
@@ -51,8 +53,13 @@ function App() {
     );
   };
 
+  const handleModal = () => {
+    setModal(!modal);
+    console.log("click")
+  };
+
   return (
-    <>
+    <main>
       <GlobalStyles />
       {scrollHeight > 15 ? <Navbar show={show} setShow={setShow} /> : null}
       <Header windowHeight={scrollHeight} />
@@ -63,9 +70,12 @@ function App() {
         handleClick={handleClick}
         handleClose={handleClose}
         projects={projects}
+        handleModal={handleModal}
+        modal={modal}
       />
       <Contact />
-    </>
+      {modal && <WorkModal closeModal={handleModal} />}
+    </main>
   );
 }
 

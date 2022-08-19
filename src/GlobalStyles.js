@@ -12,12 +12,15 @@ export const GlobalStyles = createGlobalStyle`
         
         --font-family: 'Inter', sans-serif;
     }
-    body {
-        font-family: var(--font-family);
-    }
     *, ::after, ::before {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
+    }
+    body {
+        font-family: var(--font-family);
+    }
+    main {
+        position: relative;
     }
 `;

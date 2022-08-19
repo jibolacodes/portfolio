@@ -1,14 +1,18 @@
 import React from "react";
+
+// Markup
 import { Container, LinkButtons } from "./WorkButton";
+
+// Images
 import { UilImages } from "@iconscout/react-unicons";
 import { UilExternalLinkAlt } from "@iconscout/react-unicons";
 import { UilCodeBranch } from "@iconscout/react-unicons";
 import { UilTimes } from "@iconscout/react-unicons";
 
-const WorkButton = ({ handleClose }) => (
+const WorkButton = ({ handleClose, openModal }) => (
   <Container>
     <UilTimes className="closeBtn" onClick={handleClose} />
-    <UilImages className="gallery" />
+    <UilImages className="gallery" onClick={openModal}/>
     <LinkButtons>
       <a href="http://google.com" target="_blank" rel="noopener noreferrer">
         <UilExternalLinkAlt className="live" />
