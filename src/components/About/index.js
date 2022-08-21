@@ -23,7 +23,9 @@ const About = () => (
             Voluptatibus, autem pariatur porro ex consectetur deleniti quod,
             debitis quia adipisci atque corrupti.
           </p>
-          <Button>Hire Me</Button>
+          <Button>
+            <a href="#contact me">Contact Me</a>
+          </Button>
         </Description>
       </div>
     </Content>

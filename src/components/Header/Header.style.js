@@ -9,13 +9,12 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
-  /* margin-bottom: 48px; */
+  position: relative;
 `;
 
 export const Content = styled.div`
   text-align: center;
-  
+
   @media only screen and (min-width: 1023px) {
     padding: 0;
     text-align: start;
@@ -68,34 +67,44 @@ export const Text = styled.div`
   }
 `;
 
-
 export const AnimatedText = styled.div`
   max-width: fit-content;
   font-weight: 400;
   font-size: 1.3em;
   color: var(--white);
   overflow: hidden;
-  border-right: 0.15em solid #FF9D19;
+  border-right: 0.15em solid #ff9d19;
   white-space: nowrap;
   margin: 50px auto;
   letter-spacing: 0.12em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
 
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--white) }
-  } 
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--white);
+    }
+  }
 
   @media only screen and (min-width: 1023px) {
     margin: 0;
     font-size: 1.7em;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.2em;
   }
 `;
 
@@ -105,6 +114,7 @@ export const DownloadBtn = styled.div`
   width: fit-content;
   padding: 12px 24px;
   margin: 1rem auto;
+  transition: 0.4s;
 
   a {
     text-decoration: none;
@@ -115,7 +125,7 @@ export const DownloadBtn = styled.div`
 
   &:hover {
     background-color: var(--white);
-    
+
     a {
       color: var(--bg-color);
       font-weight: 700;
@@ -126,21 +136,20 @@ export const DownloadBtn = styled.div`
   }
 `;
 
-
-export const Arrow = styled.img`
-  width: 40px;
-  position: relative;
-  bottom: -60px;
+export const Arrow = styled.a`
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
   animation: downward 1s infinite alternate;
 
   @keyframes downward {
-    0%{ transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-  }
-
-  @media only screen and (min-width: 1023px) {
-    position: absolute;
-    bottom: 0px;
-    width: 60px;
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
   }
 `;

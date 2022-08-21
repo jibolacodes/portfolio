@@ -15,7 +15,7 @@ const WorkButton = ({ handleClose, openModal, project }) => (
     <UilApps className="gallery" onClick={openModal} />
     <LinkButtons>
       <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-        <UilExternalLinkAlt className="live" />
+        <UilExternalLinkAlt className="live buttons" />
         Demo
       </a>
       <a
@@ -23,7 +23,7 @@ const WorkButton = ({ handleClose, openModal, project }) => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <UilCodeBranch className="github" />
+        <UilCodeBranch className="github buttons" />
         Source
       </a>
     </LinkButtons>

@@ -20,6 +20,9 @@ export const GlobalStyles = createGlobalStyle`
     body {
         font-family: var(--font-family);
     }
+    html {
+        scroll-behavior: smooth;
+    }
     main {
         position: relative;
     }

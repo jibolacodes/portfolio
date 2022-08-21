@@ -3,9 +3,6 @@ import React, { useState } from "react";
 // Markup
 import { Wrapper, Content, Container, Images } from "./WorkModal.style";
 
-// Data
-import images from "../../data";
-
 // Images
 import { UilTimes } from "@iconscout/react-unicons";
 import { UilArrowLeft } from "@iconscout/react-unicons";

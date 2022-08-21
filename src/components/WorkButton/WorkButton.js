@@ -17,17 +17,17 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 1024px) {
-    width: 360px;
-    height: 300px;
-  }
-
   .closeBtn {
     align-self: flex-end;
     color: var(--dark-text-color);
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition: 0.3s;
+
+    :hover {
+      color: red;
+    }
   }
 
   .gallery {
@@ -37,11 +37,11 @@ export const Container = styled.div`
     height: 60px;
     cursor: pointer;
     color: var(--bg-color);
+    transition: 0.4s;
 
-    @media screen and (min-width: 1024px) {
-      width: 120px;
-      height: 120px;
-  }
+    :hover {
+      color: var(--dark-text-color);
+    }
   }
 `;
 
@@ -53,7 +53,7 @@ export const LinkButtons = styled.div`
   align-items: baseline;
 
   a {
-    background-color: var(--dark-text-color);
+    background-color: var(--grey-text-color);
     font-size: smaller;
     text-align: center;
     display: flex;
@@ -64,25 +64,26 @@ export const LinkButtons = styled.div`
     text-decoration: none;
     color: var(--white);
     border: 3px solid var(--bg-color);
+    transition: 0.3s;
 
-    @media screen and (min-width: 1024px) {
-font-size: 1em;
-  }
-    
-  }
-
-  .live,
-  .github {
-    color: var(--white);
-    cursor: pointer;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-
-    @media screen and (min-width: 1024px) {
-      width: 40px;
-      height: 24px;
+    .live,
+    .github {
+      color: var(--white);
+      cursor: pointer;
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
     }
 
+    :hover {
+      background-color: var(--white);
+      border-color: var(--grey-text-color);
+      color: var(--dark-text-color);
+
+      .live,
+      .github {
+        color: var(--bg-color);
+      }
+    }
   }
 `;

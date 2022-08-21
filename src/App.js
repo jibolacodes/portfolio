@@ -22,17 +22,27 @@ function App() {
   const [projects, setProjects] = useState(projectsData);
   const [modal, setModal] = useState(false);
   const [modalPictures, setModalPictures] = useState([]);
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
   // For Navbar
   useEffect(() => {
-    window.addEventListener("scroll", () =>
-      setScrollHeight(document.documentElement.scrollTop)
-    );
+    const scrollPage = () =>
+      setScrollHeight(document.documentElement.scrollTop);
+    window.addEventListener("scroll", scrollPage);
 
     // default navbar close for mobile
     if (window.innerWidth < 1024) {
       window.onload = () => setShow(false);
     }
+
+    // cleanup scroll
+    return () => window.removeEventListener("scroll", scrollPage);
   }, []);
 
   // For opening modal link in portfolio
@@ -43,9 +53,10 @@ function App() {
           ? { ...project, isButton: !project.isButton }
           : { ...project, isButton: false };
       })
-    )
+    );
   };
 
+  // Close Workbutton
   const handleClose = () => {
     setProjects((oldProjects) =>
       oldProjects.map((project) => {
@@ -54,15 +65,30 @@ function App() {
     );
   };
 
+  // Close WorkModal
   const handleModal = () => {
     setModal(!modal);
   };
 
+  // Pull data from Work
   const pullProjectData = (data) => {
     setModalPictures(data.modalPictures);
   };
 
-  console.log(modalPictures)
+  // Pull data from Form inputs
+  const handleChange = (event) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [event.target.name]: event.target.value,
+    }));
+    console.log(formData);
+  };
+
+  // Submit Form
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+  };
 
   return (
     <main>
@@ -80,10 +106,12 @@ function App() {
         modal={modal}
         pullProjectData={pullProjectData}
       />
-      <Contact />
-      {modal && (
-        <WorkModal closeModal={handleModal} images={modalPictures} />
-      )}
+      <Contact
+        handleChange={handleChange}
+        formData={formData}
+        handleSubmit={handleSubmit}
+      />
+      {modal && <WorkModal closeModal={handleModal} images={modalPictures} />}
     </main>
   );
 }

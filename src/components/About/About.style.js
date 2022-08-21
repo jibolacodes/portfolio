@@ -35,18 +35,26 @@ export const Description = styled.div`
 `;
 
 export const Button = styled.button`
-  font-family: var(--font-family);
-  font-weight: 700;
-  color: var(--bg-color);
-  letter-spacing: 3px;
-  margin-top: 24px;
-  padding: 12px 22px;
-  border: 1px solid var(--bg-color);
-  background-color: #fff;
-  border-radius: 5px;
+    width: 150px;
+    height: 44px;
+    border: 1px solid var(--bg-color);
+    background-color: var(--white);
+    border-radius: 30px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    a {
+      color: var(--bg-color);
+      text-decoration: none;
+    }
 
   :hover { 
     background-color: var(--bg-color);
     color: #fff;
+
+    a {
+      color: var(--white);
+    }
   }
 `

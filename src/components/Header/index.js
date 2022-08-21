@@ -25,7 +25,9 @@ const Header = ({ scrollHeight }) => (
       </Info>
       
     </Content>
-    <Arrow src={ArrowDown} alt='Arrow Down' />
+    <Arrow href='#portfolio'>
+      <img src={ArrowDown} alt='Arrow Down' />
+    </Arrow>
   </Wrapper>
 )
 

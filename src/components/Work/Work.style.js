@@ -6,28 +6,28 @@ export const Container = styled.div`
   place-items: center;
   position: relative;
 
-  @media screen and (min-width: 1024px) {
-    grid-template-columns: auto auto auto;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    grid-template-columns: auto auto;
+  }
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: auto auto auto auto;
   }
 `;
 
 export const Image = styled.div`
   position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 0.3s;
 
   img {
     width: 300px;
     height: 240px;
     border-radius: 5px;
-
-    @media screen and (min-width: 1024px) {
-      width: 420px;
-      height: 360px;
-    }
   }
 `;
 
 export const Info = styled.div`
-  background-color: var(--bg-color);
+  background-color: var(--grey-text-color);
   width: 100%;
   height: auto;
   position: absolute;
@@ -39,10 +39,6 @@ export const Info = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
-  @media screen and (min-width: 1024px) {
-    padding: 30px;
-  }
 `;
 
 export const Text = styled.div`
@@ -52,28 +48,15 @@ export const Text = styled.div`
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-
-    @media screen and (min-width: 1024px) {
-      font-size: 1.1em;
-    }
   }
 `;
 
 export const Stack = styled.div`
   height: 22px;
 
-  @media screen and (min-width: 1024px) {
-    height: 32px;
-  }
-
   img {
     width: 22px;
     height: 22px;
     margin: 0 2px;
-
-    @media screen and (min-width: 1024px) {
-      height: 32px;
-      width: 32px;
-    }
   }
 `;
