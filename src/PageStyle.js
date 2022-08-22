@@ -40,7 +40,7 @@ export const Title = styled.section`
     font-size: 3.5em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #dee2e6;
-    color: white;
+    color: var(--white);
 
     @media only screen and (min-width: 1023px) {
       font-size: 8em;

@@ -25,7 +25,8 @@ export const Description = styled.div`
   p {
     color: var(--dark-text-color);
     line-height: 24px;
-    font-size: 16px;
+    font-size: var(--font-size);
+    margin-bottom: 12px;
   }
 
   @media only screen and (min-width: 1023px) {

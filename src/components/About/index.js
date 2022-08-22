@@ -11,13 +11,18 @@ const About = () => (
   <Wrapper id="about">
     <Content>
       <Title>
-        <h1 className="section--title">ABOUT</h1>
-        <p className="section--title--absolute">about me</p>
+        <h1 className="section--title">About Me</h1>
+        <p className="section--title--absolute">about</p>
       </Title>
       <div className="flex__container">
         <Hero src={userImg} alt="user image" />
         <Description>
           <h3>Front-End Developer</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae.
+            Voluptatibus, autem pariatur porro ex consectetur deleniti quod,
+            debitis quia adipisci atque corrupti.
+          </p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae.
             Voluptatibus, autem pariatur porro ex consectetur deleniti quod,
