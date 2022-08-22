@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   display: grid;
+  width: 100%;
   input,
   textarea {
     margin: 10px 0;
@@ -18,7 +19,7 @@ export const Form = styled.form`
   }
 
   input {
-    width: 280px;
+    width: 100%;
     height: 40px;
     border-radius: 20px;
 
@@ -29,7 +30,7 @@ export const Form = styled.form`
   }
 
   textarea {
-    max-width: 280px;
+    max-width: 100%;
     padding: 10px;
     border-radius: 20px;
 
