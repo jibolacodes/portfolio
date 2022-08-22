@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   min-height: 100vh;
 
   @media only screen and (min-width: 769px) {
-    padding: 120px 80px 0 80px;
-    /* min-height: auto; */
+    padding: 120px 80px 60px 80px;
+    min-height: auto;
   }
 `;
 

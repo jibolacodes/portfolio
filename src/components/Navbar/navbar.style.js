@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   background-color: var(--white);
-  padding: 30px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -56,7 +56,7 @@ export const NavToggle = styled.div`
 
 export const NavLinks = styled.nav`
   background-color: var(--white);
-  width: calc(240px - 30px);
+  width: calc(180px - 30px);
   height: fit-content;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
