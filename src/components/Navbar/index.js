@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // Markup
 
 import { Wrapper, Content, Logo, NavLinks, NavToggle } from "./navbar.style";
@@ -19,7 +19,7 @@ const navLinks = [
   "contact me",
 ];
 
-const Navbar = ({ show, setShow}) => {
+const Navbar = ({ show, setShow }) => {
   return (
     <Wrapper>
       <Content>
@@ -41,7 +41,7 @@ const Navbar = ({ show, setShow}) => {
               <li key={link}>
                 <a href={`#${link}`}>
                   <span>{link}</span>
-               </a>
+                </a>
               </li>
             ))}
           </ul>

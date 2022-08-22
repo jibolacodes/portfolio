@@ -46,7 +46,6 @@ export const Form = styled.form`
     height: 44px;
     font-size: var(--font-size);
     font-family: var(--font-family);
-    letter-spacing: 2px;
     border: 1px solid var(--bg-color);
     background-color: var(--white);
     border-radius: 30px;

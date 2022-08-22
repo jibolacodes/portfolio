@@ -70,14 +70,13 @@ export const Text = styled.div`
 export const AnimatedText = styled.div`
   max-width: fit-content;
   font-family: var(--font-family-absolute);
-  font-weight: 400;
-  font-size: 1.3em;
+  font-weight: 600;
+  font-size: 1.2em;
   color: var(--white);
   overflow: hidden;
   border-right: 0.15em solid #ff9d19;
   white-space: nowrap;
   margin: 50px auto;
-  letter-spacing: 0.12em;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 
   @keyframes typing {
@@ -113,7 +112,7 @@ export const DownloadBtn = styled.div`
   border: 1px solid var(--white);
   border-radius: 24px;
   width: fit-content;
-  padding: 12px 24px;
+  padding: 12px 16px;
   margin: 1rem auto;
   transition: 0.4s;
 

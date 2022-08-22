@@ -82,7 +82,7 @@ export const NavLinks = styled.nav`
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.1em;
+      /* font-size: 1.1em; */
       cursor: pointer;
 
       :hover {
