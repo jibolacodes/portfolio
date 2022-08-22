@@ -32,7 +32,7 @@ export const Content = styled.div`
 
 export const Logo = styled.div`
   h1 {
-    font-family: var(--font-family-absolute);
+    font-family: var(--font-family);
     text-align: center;
     font-weight: 900;
     font-size: 24px;
@@ -47,7 +47,7 @@ export const Logo = styled.div`
 
   @media screen and (min-width: 1024px) {
     h1 {
-      font-size: 32px;
+      font-size: 48px;
     }
   }
 `;
@@ -82,7 +82,6 @@ export const NavLinks = styled.nav`
       display: flex;
       justify-content: center;
       align-items: center;
-      /* font-size: 1.1em; */
       cursor: pointer;
 
       :hover {

@@ -42,7 +42,7 @@ export const Container = styled.div`
   align-items: center;
   grid-template-columns: auto auto auto;
   height: 320px;
-  width: 300px;
+  width: 360px;
   position: relative;
 
   @media screen and (min-width: 1024px) {
@@ -77,7 +77,10 @@ export const Container = styled.div`
   }
 
   .arrow-right {
-    right: 0;
+    right: 10px;
+  }
+  .arrow-left {
+    left: 10px;
   }
 `;
 
