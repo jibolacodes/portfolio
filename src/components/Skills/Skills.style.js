@@ -17,7 +17,7 @@ export const Logo = styled.div`
   display: grid;
   place-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background-color: var(--dark-text-color);
+  background-color: var(--white);
   border-radius: 3px;
   padding: 10px;
 
@@ -36,6 +36,7 @@ export const Logo = styled.div`
     text-align: center;
     text-transform: uppercase;
     font-size: smaller;
-    color: var(--white);
+    color: var(--dark-text-color);
+    font-weight: var(--font-weight-bold);
   }
 `;

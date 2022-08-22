@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: var(--white);
-  width: 240px;
-  height: 180px;
+  width: 270px;
+  height: 210px;
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -77,7 +77,7 @@ export const LinkButtons = styled.div`
 
     :hover {
       background-color: var(--white);
-      border-color: var(--grey-text-color);
+      border: 3px solid var(--grey-text-color);
       color: var(--dark-text-color);
 
       .live,

@@ -12,7 +12,9 @@ margin-bottom: 30px;
   .training--title {
     margin-bottom: 20px;
     color: var(--dark-text-color);
-    text-decoration: underline var(--bg-color) 2px;
+    text-decoration: var(--bg-color) 2px;
+    font-size: larger;
+    text-transform: uppercase;
     line-height: 20px;
   }
 `;

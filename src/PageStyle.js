@@ -34,7 +34,7 @@ export const Title = styled.section`
   margin-bottom: 24px;
 
   .section--title {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-family-absolute);
     text-align: center;
     font-weight: 900;
     font-size: 3.5em;
@@ -53,7 +53,7 @@ export const Title = styled.section`
     font-size: 1.6em;
     font-weight: 900;
     position: absolute;
-    bottom: 18px;
+    bottom: 22px;
     margin: auto;
     left: 0;
     right: 0;

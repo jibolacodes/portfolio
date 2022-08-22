@@ -7,11 +7,18 @@ export const GlobalStyles = createGlobalStyle`
 
         --bg-color : #00C0C0;
         --white : #fff;
+        --blue-faded: rgba(78, 167, 244, 0.5);
         --dark-text-color: #343a40;
         --grey-text-color: #6c757d;
+        --text-border-color: #dee2e6;
         
-        --font-family: 'Inter', sans-serif;
+        --font-logo: 'Aboreto', cursive;
+        --font-family: 'Poppins', sans-serif;
+        --font-family-absolute: 'Poppins', sans-serif;
         --font-size: 16px;
+
+        --font-weight-bold: 600;
+
     }
     *, ::after, ::before {
         box-sizing: border-box;

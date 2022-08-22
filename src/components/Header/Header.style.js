@@ -49,7 +49,7 @@ export const Text = styled.div`
   margin-bottom: 40px;
 
   h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-family-absolute);
     font-weight: 800;
     font-size: 2.6em;
     color: var(--bg-color);
@@ -69,6 +69,7 @@ export const Text = styled.div`
 
 export const AnimatedText = styled.div`
   max-width: fit-content;
+  font-family: var(--font-family-absolute);
   font-weight: 400;
   font-size: 1.3em;
   color: var(--white);

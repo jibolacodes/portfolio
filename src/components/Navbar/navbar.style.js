@@ -22,18 +22,27 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   @media screen and (min-width: 1024px) {
-    height: fit-content;
+    height: auto;
     box-shadow: none;
   }
 `;
 
 export const Logo = styled.div`
   h1 {
-    font-family: "Neonderthaw", cursive;
+    font-family: var(--font-family-absolute);
+    text-align: center;
+    font-weight: 900;
     font-size: 24px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--bg-color);
+    color: var(--white);
+
+    @media only screen and (min-width: 1023px) {
+      font-size: 8em;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -74,12 +83,11 @@ export const NavLinks = styled.nav`
       justify-content: center;
       align-items: center;
       font-size: 1.1em;
-      font-weight: 600;
-
+      cursor: pointer;
 
       :hover {
         background-color: var(--bg-color);
-        cursor: pointer;
+        font-weight: 600;
       }
 
       a {

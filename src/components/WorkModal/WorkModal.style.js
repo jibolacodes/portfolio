@@ -28,6 +28,11 @@ export const Content = styled.div`
     @media screen and (min-width: 1024px) {
       margin-bottom: 20px;
     }
+
+    :hover {
+      color: var(--bg-color);
+      background-color: var(--white);
+    }
   }
 `;
 
@@ -65,6 +70,10 @@ export const Container = styled.div`
     background-color: var(--white);
     border-radius: 50%;
     position: absolute;
+
+    :hover {
+      color: var(--bg-color);
+    }
   }
 
   .arrow-right {

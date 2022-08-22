@@ -16,12 +16,15 @@ export const Container = styled.div`
 
 export const Image = styled.div`
   position: relative;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: 0.3s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
   img {
     width: 335px;
-    height: 240px;
+    height: 270px;
     border-radius: 5px;
 
     @media screen and (max-width: 374px) {
@@ -31,7 +34,7 @@ export const Image = styled.div`
 `;
 
 export const Info = styled.div`
-  background-color: var(--grey-text-color);
+  background-color: var(--bg-color);
   width: 100%;
   height: auto;
   position: absolute;
@@ -47,7 +50,7 @@ export const Info = styled.div`
 
 export const Text = styled.div`
   p {
-    color: var(--white);
+    color: var(--dark-text-color);
     font-size: smaller;
     font-weight: 700;
     letter-spacing: 2px;

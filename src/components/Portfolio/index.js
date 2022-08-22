@@ -12,7 +12,7 @@ const Portfolio = ({ showButton, handleClick, projects, handleClose, handleModal
     <Content>
       <Title>
         <h1 className="section--title">Projects</h1>
-        <p className="section--title--absolute">Portfolio</p>
+        <p className="section--title--absolute">Projects</p>
       </Title>
       <Container>
         <Filters>
