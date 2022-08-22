@@ -36,12 +36,15 @@ export const Description = styled.div`
 `;
 
 export const Button = styled.button`
-    width: 150px;
+    padding: 0 20px;
     height: 44px;
+    font-size: var(--font-size);
+    letter-spacing: 2px;
     border: 1px solid var(--bg-color);
     background-color: var(--white);
     border-radius: 30px;
     margin: 20px auto;
+    color: var(--bg-color);
     cursor: pointer;
     transition: 0.3s;
     

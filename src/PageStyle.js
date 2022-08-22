@@ -53,7 +53,7 @@ export const Title = styled.section`
     font-size: 1.6em;
     font-weight: 900;
     position: absolute;
-    bottom: 20px;
+    bottom: 18px;
     margin: auto;
     left: 0;
     right: 0;

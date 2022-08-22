@@ -11,7 +11,7 @@ const About = () => (
   <Wrapper id="about">
     <Content>
       <Title>
-        <h1 className="section--title">About Me</h1>
+        <h1 className="section--title">About</h1>
         <p className="section--title--absolute">about</p>
       </Title>
       <div className="flex__container">

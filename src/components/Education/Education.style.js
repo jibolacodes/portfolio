@@ -7,6 +7,16 @@ export const Section = styled.section`
   margin: 0 auto;
 `;
 
+export const Training = styled.article`
+margin-bottom: 30px;
+  .training--title {
+    margin-bottom: 20px;
+    color: var(--dark-text-color);
+    text-decoration: underline var(--bg-color) 2px;
+    line-height: 20px;
+  }
+`;
+
 export const Bullet = styled.div`
   border: 1px solid var(--bg-color);
   border-radius: 50%;
@@ -32,8 +42,6 @@ export const Bullet = styled.div`
 `;
 
 export const Description = styled.div`
-  /* margin-top: 30px; */
-
   h3 {
     color: var(--dark-text-color);
     margin-bottom: 5px;
@@ -41,7 +49,7 @@ export const Description = styled.div`
   h4 {
     margin-bottom: 10px;
     color: var(--grey-text-color);
-    
+
     span {
       color: var(--dark-text-color);
       font-weight: normal;

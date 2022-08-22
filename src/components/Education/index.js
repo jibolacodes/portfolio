@@ -2,7 +2,7 @@ import React from "react";
 
 // Markup
 import { Wrapper, Content, Title } from "../../PageStyle";
-import { Section, Description, Bullet } from "./Education.style";
+import { Training, Section, Description, Bullet } from "./Education.style";
 
 // Image
 
@@ -40,28 +40,31 @@ const Education = () => (
     <Content>
       <Title>
         <h1 className="section--title">Training</h1>
-        <p className="section--title--absolute">Education</p>
+        <p className="section--title--absolute">Training</p>
       </Title>
-      {schools.map((school, id) => (
-        <Section key={id}>
-          <Bullet>
-            <span></span>
-          </Bullet>
-          <Description>
-            <h3>
-            {school.course}
-            {/* <span>online</span> */}
-            </h3> 
-            <h4>
-              {school.name}{" "}
-              <span>
-                | {school.startYear} - {school.endYear}
-              </span>
-            </h4>
-            <p>{school.description}</p>
-          </Description>
-        </Section>
-      ))}
+      <Training>
+        <h3 className="training--title">My Education</h3>
+        {schools.map((school, id) => (
+          <Section key={id}>
+            <Bullet>
+              <span></span>
+            </Bullet>
+            <Description>
+              <h3>
+                {school.course}
+                {/* <span>online</span> */}
+              </h3>
+              <h4>
+                {school.name}{" "}
+                <span>
+                  | {school.startYear} - {school.endYear}
+                </span>
+              </h4>
+              <p>{school.description}</p>
+            </Description>
+          </Section>
+        ))}
+      </Training>
     </Content>
   </Wrapper>
 );
