@@ -11,7 +11,7 @@ const Portfolio = ({ showButton, handleClick, projects, handleClose, handleModal
   <Wrapper id="portfolio">
     <Content>
       <Title>
-        <h1 className="section--title">Portfolio</h1>
+        <h1 className="section--title">Works</h1>
         <p className="section--title--absolute">Portfolio</p>
       </Title>
       <Container>

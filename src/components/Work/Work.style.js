@@ -20,9 +20,13 @@ export const Image = styled.div`
   transition: 0.3s;
 
   img {
-    width: 300px;
+    width: 335px;
     height: 240px;
     border-radius: 5px;
+
+    @media screen and (max-width: 374px) {
+      width: 300px;
+    }
   }
 `;
 

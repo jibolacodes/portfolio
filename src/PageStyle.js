@@ -37,7 +37,7 @@ export const Title = styled.section`
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 3.5em;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #dee2e6;
     color: white;
@@ -50,11 +50,11 @@ export const Title = styled.section`
     color: var(--bg-color);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 900;
     position: absolute;
-    bottom: 16px;
-    margin: 0 auto;
+    bottom: 20px;
+    margin: auto;
     left: 0;
     right: 0;
     text-align: center;

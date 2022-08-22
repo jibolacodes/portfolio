@@ -11,7 +11,7 @@ const Contact = ({ handleChange, formData, handleSubmit }) => (
     <Content>
       <Title>
         <h1 className="section--title">Contact</h1>
-        <p className="section--title--absolute">Contact Me</p>
+        <p className="section--title--absolute">Message Me</p>
       </Title>
       <Form>
         <input

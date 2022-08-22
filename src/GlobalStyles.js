@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
         --grey-text-color: #6c757d;
         
         --font-family: 'Inter', sans-serif;
+        --font-size: 16px;
     }
     *, ::after, ::before {
         box-sizing: border-box;

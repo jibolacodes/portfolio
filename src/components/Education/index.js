@@ -39,7 +39,7 @@ const Education = () => (
   <Wrapper id="education">
     <Content>
       <Title>
-        <h1 className="section--title">Education</h1>
+        <h1 className="section--title">Training</h1>
         <p className="section--title--absolute">Education</p>
       </Title>
       {schools.map((school, id) => (
