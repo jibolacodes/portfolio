@@ -25,9 +25,7 @@ export const Content = styled.div`
     background-color: var(--bg-color);
     border-radius: 50%;
 
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
 
     :hover {
       color: var(--bg-color);
@@ -41,24 +39,44 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   grid-template-columns: auto auto auto;
-  height: 320px;
+  height: 360px;
   width: 360px;
   position: relative;
+
+  @media screen and (max-width: 374px) {
+    height: 300px;
+    width: 300px;
+  }
 
   @media screen and (min-width: 1024px) {
     height: 600px;
     width: 660px;
   }
 
+  @media screen and (min-width: 425px) and (max-width: 1023px) {
+    height: 400px;
+    width: 400px;
+  }
+
   img {
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     border-radius: 5px;
     border: 2px solid var(--white);
+
+    @media screen and (max-width: 374px) {
+      height: 300px;
+      width: 300px;
+    }
 
     @media screen and (min-width: 1024px) {
       height: 600px;
       width: 660px;
+    }
+
+    @media screen and (min-width: 425px) and (max-width: 1023px) {
+      height: 400px;
+      width: 400px;
     }
   }
 

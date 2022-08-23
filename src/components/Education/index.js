@@ -8,7 +8,7 @@ import Certificates from "../Certificates";
 import Jobs from "../Jobs";
 
 const Education = ({ schools, jobs }) => (
-  <Wrapper id="education">
+  <Wrapper id="training">
     <Content>
       <Title>
         <h1 className="section--title">Training</h1>

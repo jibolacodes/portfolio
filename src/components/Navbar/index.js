@@ -1,11 +1,11 @@
 import React from "react";
-// Markup
 
+// Markup
 import { Wrapper, Content, Logo, NavLinks, NavToggle } from "./navbar.style";
 
 // Image
-import CloseBtn from "../../images/times.svg";
-import OpenBtn from "../../images/bars.svg";
+import { UilTimes} from "@iconscout/react-unicons";
+import { UilPlus} from "@iconscout/react-unicons";
 
 // animations
 import "animate.css";
@@ -16,6 +16,7 @@ const navLinks = [
   "training",
   "skills",
   "portfolio",
+  "comments",
   "contact me",
 ];
 
@@ -27,11 +28,7 @@ const Navbar = ({ show, setShow }) => {
           <h1>Jibolacodes</h1>
         </Logo>
         <NavToggle onClick={() => setShow(!show)}>
-          {show ? (
-            <img src={CloseBtn} alt="Close button" />
-          ) : (
-            <img src={OpenBtn} alt="Open button" />
-          )}
+          {show ? <UilTimes className="toggle-btn"/> : <UilPlus className="toggle-btn"/>}
         </NavToggle>
       </Content>
       {show && (

@@ -52,6 +52,7 @@ export const Text = styled.div`
     font-family: var(--font-family-absolute);
     font-weight: 800;
     font-size: 2.6em;
+    letter-spacing: 4px;
     color: var(--bg-color);
     -webkit-text-stroke: 2px var(--white);
 
@@ -109,22 +110,33 @@ export const AnimatedText = styled.div`
 `;
 
 export const DownloadBtn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--white);
   border-radius: 24px;
   width: fit-content;
   padding: 12px 16px;
   margin: 1rem auto;
   transition: 0.4s;
+  color: var(--white);
+
+  .download-icon {
+    width: 20px;
+    height: 20px;
+  }
 
   a {
     text-decoration: none;
     font-weight: 500;
     color: var(--white);
     letter-spacing: 2px;
+    margin-left: 10px;
   }
 
   &:hover {
     background-color: var(--white);
+    color: var(--bg-color);
 
     a {
       color: var(--bg-color);
@@ -139,9 +151,9 @@ export const DownloadBtn = styled.div`
 export const Arrow = styled.a`
   position: absolute;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
   animation: downward 1s infinite alternate;
 
   @keyframes downward {

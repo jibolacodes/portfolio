@@ -4,7 +4,7 @@ import { Training, Section, Bullet, Description} from  "../Education/Education.s
 
 const Jobs = ({ jobs }) => (
   <Training>
-    <h3 className="training--title">My Experience</h3>
+    <h3 className="training--title">Experience</h3>
     {jobs.map((job, id) => (
       <Section key={id}>
         <Bullet>

@@ -16,6 +16,8 @@ import {
 import HeaderImg from "../../images/jibolacodes.jpg";
 import ArrowDown from "../../images/angle-double-down.svg";
 
+import { UilUpload } from "@iconscout/react-unicons";
+
 const Header = ({ scrollHeight }) => (
   <Wrapper id="home">
     <Content>
@@ -28,6 +30,7 @@ const Header = ({ scrollHeight }) => (
         </Text>
         <AnimatedText>Front-End Web Developer</AnimatedText>
         <DownloadBtn>
+          <UilUpload className="download-icon"/>
           <a
             href="https://drive.google.com/file/d/1pllpsf2pLGWpfDBOMtIzx8k0kzj8BM_m/view?usp=sharing"
             target="_blank"

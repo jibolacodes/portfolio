@@ -8,9 +8,9 @@ export const Form = styled.form`
   textarea {
     margin: 10px 0;
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 10px;
-    border: 2px solid #dee2e6;
+    border: 1px solid #dee2e6;
     transition: 0.3s;
 
     :hover,
@@ -23,7 +23,7 @@ export const Form = styled.form`
   input {
     width: 100%;
     height: 45px;
-    border-radius: 20px;
+    border-radius: 10px;
 
     @media screen and (min-width: 768px) {
       width: 570px;
@@ -58,5 +58,31 @@ export const Form = styled.form`
       background-color: var(--bg-color);
       color: #fff;
     }
+  }
+`;
+
+export const Message = styled.div`
+  position: absolute;
+  top: 75px;
+  z-index: 1;
+
+  @media screen and (min-width: 1024px) {
+    top: 170px;
+  }
+
+  .success,
+  .failure {
+    padding: 5px 10px;
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .success {
+    background-color: green;
+  }
+  .failure {
+    background-color: crimson;
   }
 `;

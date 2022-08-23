@@ -54,8 +54,10 @@ export const Logo = styled.div`
 
 export const NavToggle = styled.div`
   width: fit-content;
-  img {
+  .toggle-btn {
     width: 30px;
+    height: 30px;
+    color: var(--bg-color)
   }
 
   @media screen and (min-width: 1024px) {
@@ -75,7 +77,7 @@ export const NavLinks = styled.nav`
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(7, 80px);
 
     li {
       padding-left: 20px;

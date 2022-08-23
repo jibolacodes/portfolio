@@ -9,11 +9,11 @@ export const Section = styled.section`
 
 export const Training = styled.article`
 margin-bottom: 30px;
+
   .training--title {
     margin-bottom: 20px;
-    color: var(--dark-text-color);
-    text-decoration: var(--bg-color) 2px;
-    font-size: larger;
+    color: var(--bg-color);
+    font-weight: 600;
     text-transform: uppercase;
     line-height: 20px;
   }

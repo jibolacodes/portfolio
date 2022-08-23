@@ -19,7 +19,6 @@ export const Description = styled.div`
   h3 {
     margin-bottom: 12px;
     color: var(--dark-text-color);
-    letter-spacing: 3px;
     font-size: 1.3em;
   }
   p {
@@ -47,6 +46,11 @@ export const Button = styled.button`
   color: var(--bg-color);
   cursor: pointer;
   transition: 0.3s;
+  display: none;
+
+  @media only screen and (min-width: 1023px) {
+    display: block;
+  }
 
   a {
     color: var(--bg-color);
@@ -72,13 +76,19 @@ export const Socials = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     place-items: center;
-    margin-left: 20px;
+
+    margin: 10px 20px 0 0;
+
     background: none;
     border: none;
     color: var(--bg-color);
     border: 1px solid var(--bg-color);
     padding: 5px 10px;
     border-radius: 5px;
+
+    @media only screen and (min-width: 1023px) {
+      margin: 0 0 0 20px;
+    }
 
     a {
       margin-right: 10px;

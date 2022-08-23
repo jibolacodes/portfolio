@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   position: relative;
   padding: var(--page-padding);
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   @media only screen and (min-width: 769px) {
     padding: 120px 80px 60px 80px;
@@ -12,6 +12,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
+  /* For message notice */
+  position: relative;
+  /* ... */
   display: flex;
   flex-direction: column;
   justify-content: center;

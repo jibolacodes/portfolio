@@ -4,7 +4,7 @@ import React from "react";
 import { Wrapper, Content, Title } from "../../PageStyle";
 
 // Components
-import { Form } from "./Contact.style";
+import { Form, Message } from "./Contact.style";
 
 const Contact = ({ handleChange, formData, handleSubmit }) => (
   <Wrapper id="contact me">
@@ -13,6 +13,10 @@ const Contact = ({ handleChange, formData, handleSubmit }) => (
         <h1 className="section--title">Contact</h1>
         <p className="section--title--absolute">Contact</p>
       </Title>
+      <Message>
+        {/* <p className="success">Message Sent</p> */}
+        <p className="failure">Message Failed</p>
+      </Message>
       <Form>
         <input
           type="text"

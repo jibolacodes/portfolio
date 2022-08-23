@@ -45,10 +45,8 @@ export const jobsData = [
     endYear: "Present",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
-  }
-
+  },
 ];
-
 
 export const projectsData = [
   {
@@ -170,5 +168,29 @@ export const projectsData = [
     liveLink: "https://google.com",
     github: "https://github.com",
     stack: ["api.png", "css.png", "react.png"],
+  },
+];
+
+export const testimonials = [
+  {
+    name: "First Person",
+    role: "Web Developer",
+    image: "portfolio_sample_1.jpg",
+    comment:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
+  },
+  {
+    name: "Second Person",
+    role: "Product Designer",
+    image: "portfolio_sample_2.jpg",
+    comment:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
+  },
+  {
+    name: "Third Person",
+    role: "Content Creator",
+    image: "portfolio_sample_3.jpg",
+    comment:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
   },
 ];

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: var(--white);
+  background-color: var(--bg-color);
   width: 270px;
   height: 210px;
   border-radius: 5px;
@@ -32,11 +32,11 @@ export const Container = styled.div`
 
   .gallery {
     border-radius: 5px;
-    width: 60px;
     font-size: 200px;
+    width: 60px;
     height: 60px;
     cursor: pointer;
-    color: var(--bg-color);
+    color: var(--white);
     transition: 0.4s;
 
     :hover {

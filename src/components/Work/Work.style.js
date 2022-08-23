@@ -34,7 +34,7 @@ export const Image = styled.div`
 `;
 
 export const Info = styled.div`
-  background-color: var(--bg-color);
+  background-color: var(--white);
   width: 100%;
   height: auto;
   position: absolute;

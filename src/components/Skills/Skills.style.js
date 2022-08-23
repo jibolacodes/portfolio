@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-gap: 20px;
   max-width: 100vw;
