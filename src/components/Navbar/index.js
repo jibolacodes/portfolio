@@ -13,7 +13,7 @@ import "animate.css";
 const navLinks = [
   "home",
   "about",
-  "education",
+  "training",
   "skills",
   "portfolio",
   "contact me",

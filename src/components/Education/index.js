@@ -2,69 +2,20 @@ import React from "react";
 
 // Markup
 import { Wrapper, Content, Title } from "../../PageStyle";
-import { Training, Section, Description, Bullet } from "./Education.style";
+// import { Training, Section, Description, Bullet } from "./Education.style";
 
-// Image
+import Certificates from "../Certificates";
+import Jobs from "../Jobs";
 
-const schools = [
-  {
-    name: "University of Lagos",
-    mode: "campus",
-    course: "BSc. Systems Engineering",
-    startYear: "Sept 2010",
-    endYear: "Nov 2016",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
-  },
-  {
-    name: "freecodecamp",
-    course: "Javascript Algorithms and Data Structures",
-    startYear: "July 2021",
-    endYear: "Dec 2021",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
-  },
-  {
-    name: "Havard's CS50x",
-    mode: "online",
-    course: "Introduction to Computer Science",
-    startYear: "Jan 2022",
-    endYear: "July 2022",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
-  },
-];
-
-const Education = () => (
+const Education = ({ schools, jobs }) => (
   <Wrapper id="education">
     <Content>
       <Title>
         <h1 className="section--title">Training</h1>
         <p className="section--title--absolute">Training</p>
       </Title>
-      <Training>
-        <h3 className="training--title">My Education</h3>
-        {schools.map((school, id) => (
-          <Section key={id}>
-            <Bullet>
-              <span></span>
-            </Bullet>
-            <Description>
-              <h3>
-                {school.course}
-                {/* <span>online</span> */}
-              </h3>
-              <h4>
-                {school.name}{" "}
-                <span>
-                  | {school.startYear} - {school.endYear}
-                </span>
-              </h4>
-              <p>{school.description}</p>
-            </Description>
-          </Section>
-        ))}
-      </Training>
+      <Certificates schools={schools}/>
+      <Jobs jobs={jobs}/>
     </Content>
   </Wrapper>
 );

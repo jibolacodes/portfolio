@@ -12,7 +12,7 @@ import Contact from "./components/Contact";
 import WorkModal from "./components/WorkModal";
 
 // Data
-import projectsData from "./data";
+import { projectsData , schoolsData, jobsData } from "./data";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -96,7 +96,7 @@ function App() {
       {scrollHeight > 15 ? <Navbar show={show} setShow={setShow} /> : null}
       <Header windowHeight={scrollHeight} />
       <About />
-      <Education />
+      <Education schools={schoolsData} jobs={jobsData}/>
       <Skills />
       <Portfolio
         handleClick={handleClick}

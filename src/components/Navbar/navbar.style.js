@@ -37,7 +37,7 @@ export const Logo = styled.div`
     font-weight: 900;
     font-size: 24px;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px var(--bg-color);
+    -webkit-text-stroke: 2px var(--bg-color);
     color: var(--white);
 
     @media only screen and (min-width: 1023px) {
