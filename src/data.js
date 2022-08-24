@@ -177,8 +177,8 @@ export const testimonials = [
     role: "Web Developer",
     image: "portfolio_sample_1.jpg",
     comment:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
-  },
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti.",
+  },  
   {
     name: "Second Person",
     role: "Product Designer",
@@ -191,6 +191,6 @@ export const testimonials = [
     role: "Content Creator",
     image: "portfolio_sample_3.jpg",
     comment:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
+      "Deleniti quod, debitis quia adipisci atque corrupti.Lorem ipsum dolor sit,",
   },
 ];

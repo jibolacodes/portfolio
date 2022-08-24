@@ -15,7 +15,7 @@ import WorkModal from "./components/WorkModal";
 import ScrollUpButton from "./components/ScrollUpButton";
 
 // Data
-import { projectsData , schoolsData, jobsData, testimonials } from "./data";
+import { projectsData, schoolsData, jobsData, testimonials } from "./data";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -32,7 +32,7 @@ function App() {
     subject: "",
     message: "",
   });
-  
+
   useEffect(() => {
     const scrollPage = () =>
       setScrollHeight(document.documentElement.scrollTop);
@@ -47,9 +47,6 @@ function App() {
     // cleanup scroll
     return () => window.removeEventListener("scroll", scrollPage);
   }, []);
-
-
-
 
   // For opening modal link in portfolio
   const handleClick = (id) => {
@@ -94,15 +91,13 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    setFormData((prevFormData) => (
-      {
-        firstname: "",
-        lastname: "",
-        email: "",
-        subject: "",
-        message: "",
-      }
-    ))
+    setFormData((prevFormData) => ({
+      firstname: "",
+      lastname: "",
+      email: "",
+      subject: "",
+      message: "",
+    }));
   };
 
   return (
@@ -111,7 +106,7 @@ function App() {
       {scrollHeight > 15 ? <Navbar show={show} setShow={setShow} /> : null}
       <Header windowHeight={scrollHeight} />
       <About />
-      <Education schools={schoolsData} jobs={jobsData}/>
+      <Education schools={schoolsData} jobs={jobsData} />
       <Skills />
       <Portfolio
         handleClick={handleClick}
@@ -121,7 +116,7 @@ function App() {
         modal={modal}
         pullProjectData={pullProjectData}
       />
-      <Comments testimonials={testimonials}/>
+      <Comments testimonials={testimonials} />
       <Contact
         handleChange={handleChange}
         formData={formData}

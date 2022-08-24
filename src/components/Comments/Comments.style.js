@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
 export const Comment = styled.section`
-    /* border: 2px solid var(--bg-color); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-  width: 300px;
+  .carousel {
+    min-width: 300px;
+  }
+
+
   max-height: fit-content;
   .quote-left,
   .quote-right {
@@ -36,7 +43,6 @@ export const Text = styled.section`
   margin: 24px 0 0 0;
   text-align: center;
   font-style: italic;
-
 `;
 
 export const Person = styled.section`
@@ -45,19 +51,16 @@ export const Person = styled.section`
   margin-top: 30px;
 
   .image {
-
     img {
       width: 80px;
       height: 80px;
       clip-path: circle();
-      
-    }    
+    }
   }
   .name {
     margin: 5px 0;
   }
   .role {
-    
     color: var(--grey-text-color);
   }
 `;
