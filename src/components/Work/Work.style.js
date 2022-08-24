@@ -52,7 +52,7 @@ export const Text = styled.div`
   p {
     color: var(--dark-text-color);
     font-size: smaller;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
   }

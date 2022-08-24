@@ -26,20 +26,17 @@ export const Socials = styled.div`
     width: 40px;
     border-radius: 50%;
     margin: 0 20px;
-
-    a {
-      text-decoration: none;
-      color: var(--bg-color);
-      font-family: var(--font-family);
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--bg-color);
+    font-family: var(--font-family);
 
     :hover {
       background-color: var(--bg-color);
       color: var(--white);
-
-      a {
-        color: var(--white);
-      }
+      border: 2px solid var(--white);
     }
   }
 `;
@@ -47,7 +44,10 @@ export const Socials = styled.div`
 export const Text = styled.section`
   p {
     color: var(--white);
-    font-weight: bold;
-  }
+    letter-spacing: 2px;
 
+    .emoji {
+      font-size: 1.3em;
+    }
+  }
 `;

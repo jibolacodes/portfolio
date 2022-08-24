@@ -14,8 +14,8 @@ const Contact = ({ handleChange, formData, handleSubmit }) => (
         <p className="section--title--absolute">Contact</p>
       </Title>
       <Message>
-        {/* <p className="success">Message Sent</p> */}
-        <p className="failure">Message Failed</p>
+        {formData.isSent && <p className="success">Message Sent</p>}
+        {/* <p className="failure">Message Failed</p> */}
       </Message>
       <Form>
         <input

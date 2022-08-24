@@ -20,7 +20,7 @@ margin-bottom: 30px;
 `;
 
 export const Bullet = styled.div`
-  border: 1px solid var(--bg-color);
+  border: 2px solid var(--bg-color);
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -46,10 +46,12 @@ export const Bullet = styled.div`
 export const Description = styled.div`
   h3 {
     color: var(--dark-text-color);
+    font-weight: 600;
     margin-bottom: 5px;
   }
   h4 {
     margin-bottom: 10px;
+    font-weight: 500;
     color: var(--grey-text-color);
 
     span {

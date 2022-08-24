@@ -31,6 +31,7 @@ function App() {
     email: "",
     subject: "",
     message: "",
+    isSent: false,
   });
 
   useEffect(() => {
@@ -92,12 +93,20 @@ function App() {
     event.preventDefault();
 
     setFormData((prevFormData) => ({
-      firstname: "",
-      lastname: "",
-      email: "",
-      subject: "",
-      message: "",
+      ...prevFormData,
+      isSent: true,
     }));
+
+    setTimeout(() => {
+      setFormData((prevFormData) => ({
+        firstname: "",
+        lastname: "",
+        email: "",
+        subject: "",
+        message: "",
+        isSent: false,
+      }));
+    }, 3000);
   };
 
   return (

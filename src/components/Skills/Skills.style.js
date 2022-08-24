@@ -38,6 +38,6 @@ export const Logo = styled.div`
     text-transform: uppercase;
     font-size: smaller;
     color: var(--dark-text-color);
-    font-weight: var(--font-weight-bold);
+    font-weight: 500;
   }
 `;

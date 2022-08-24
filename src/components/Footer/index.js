@@ -12,38 +12,36 @@ const Footer = () => (
   <Wrapper>
     <Content>
       <Socials>
-        <button class="btn btn-github">
-          <a
-            href="https://github.com/jibolacodes"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <UilGithub />
-          </a>
-        </button>
-        <button class="btn btn-github">
+        <a
+          href="https://github.com/jibolacodes"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-github"
+        >
+          <UilGithub />
+        </a>
+
           <a
             href="https://www.linkedin.com/in/ajibola-akindunbi"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn btn-github"
           >
             <UilLinkedin />
           </a>
-        </button>
-        <button class="btn btn-github">
+
           <a
             href="https://www.twitter.com/jibolacodes"
             target="_blank"
             rel="noopener noreferrer"
+            className="btn btn-github"
           >
             <UilTwitter />
           </a>
-        </button>
+
       </Socials>
       <Text>
-        <p>
-          Made by jibolacodes
-        </p>
+        <p>Made by jibolacodes <span className="emoji" role="img" aria-label="emoji">👑</span></p>
       </Text>
     </Content>
   </Wrapper>

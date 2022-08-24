@@ -7,9 +7,14 @@ export const Comment = styled.section`
   width: 100%;
 
   .carousel {
-    min-width: 300px;
-  }
+    max-width: 300px;
+    margin: 0 auto;
 
+    @media screen and (min-width: 1024px) {
+      max-width: 480px;
+
+    }
+  }
 
   max-height: fit-content;
   .quote-left,
@@ -43,6 +48,7 @@ export const Text = styled.section`
   margin: 24px 0 0 0;
   text-align: center;
   font-style: italic;
+  font-weight: 300;
 `;
 
 export const Person = styled.section`

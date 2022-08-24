@@ -48,9 +48,9 @@ const Comments = ({ testimonials }) => {
                     </div>
                     <p className="name">{name}</p>
                     <p className="role">
-                      <span>***</span>
+                      <span>★★★ </span>
                       {role}
-                      <span>***</span>
+                      <span> ★★★</span>
                     </p>
                   </Person>
                 </div>
