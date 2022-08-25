@@ -69,17 +69,17 @@ export const projectsData = [
 export const testimonials = [
   {
     name: "Femi Osholake",
-    role: "IT Lead - Brave Achievers",
+    role: "IT Lead",
     image: "femi-osholake.jpeg",
     comment:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti."
   },  
   {
-    name: "Second Person",
-    role: "Product Designer",
-    image: "portfolio_sample_2.jpg",
+    name: "Claudius Odeyemi",
+    role: "Creative Designer",
+    image: "claudius-odeyemi.jpeg",
     comment:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, quae. Voluptatibus, autem pariatur porro ex consectetur deleniti quod, debitis quia adipisci atque corrupti.",
+    "Ajibola's creative ideas, ability to pay attention to details, and overall style is second to none. He is incredibly polite, a team player, prompt and thorough."
   },
   {
     name: "Third Person",

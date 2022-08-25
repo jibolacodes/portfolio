@@ -23,7 +23,7 @@ const About = () => (
           <p>
             Hello there, I am a front-end web developer who loves to create web
             applications using React.js. When I am not glued to my computer, I
-            spend my time reading, Watching football, seeing a movie or having
+            spend my time reading a book, watching football, seeing a movie or having
             great conversations with people.
           </p>
           <p>

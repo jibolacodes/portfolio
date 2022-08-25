@@ -14,22 +14,22 @@ export const Hero = styled.img`
   }
 `;
 
-export const Description = styled.div`
+export const Description = styled.section`
   margin-top: 24px;
   h3 {
     margin-bottom: 12px;
     color: var(--dark-text-color);
-    font-size: larger;
+    font-size: 24px;
   }
   p {
     color: var(--dark-text-color);
-    line-height: 24px;
+    line-height: 28px;
     margin-bottom: 12px;
   }
 
   @media only screen and (min-width: 1023px) {
     h3 {
-      font-size: 1.6rem;
+      /* font-size: 1.6rem; */
     }
     width: 50%;
     margin: 0 15px;

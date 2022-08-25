@@ -15,7 +15,7 @@ const Comments = ({ testimonials }) => {
         setIndex(0);
       }
     console.log(index);
-    }, 5000);
+    }, 8000);
   }, [index]); 
 
 
@@ -37,7 +37,7 @@ const Comments = ({ testimonials }) => {
                     <p>"</p>
                   </div>
                   <Text>
-                    <p>{comment}</p>f
+                    <p>{comment}</p>
                   </Text>
                   <div className="quote-right">
                     <p>"</p>

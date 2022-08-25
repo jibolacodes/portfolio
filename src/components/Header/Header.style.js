@@ -27,7 +27,7 @@ export const Content = styled.div`
 
 export const UserImg = styled.img`
   margin-bottom: 20px;
-  width: 180px;
+  width: 240px;
   clip-path: circle();
 
   @media only screen and (min-width: 1023px) {

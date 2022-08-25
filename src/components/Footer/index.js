@@ -25,7 +25,7 @@ const Footer = () => (
             href="https://www.linkedin.com/in/ajibola-akindunbi"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-github"
+            className="btn btn-linkedin"
           >
             <UilLinkedin />
           </a>
@@ -34,7 +34,7 @@ const Footer = () => (
             href="https://www.twitter.com/jibolacodes"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-github"
+            className="btn btn-twitter"
           >
             <UilTwitter />
           </a>
