@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: var(--bg-color);
-  padding: 20px;
+  padding: 10px;
   min-height: 100vh;
   max-width: 100vw;
   display: flex;
@@ -26,7 +26,7 @@ export const Content = styled.div`
 `;
 
 export const UserImg = styled.img`
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   width: 240px;
   clip-path: circle();
 
@@ -77,7 +77,7 @@ export const AnimatedText = styled.div`
   overflow: hidden;
   border-right: 0.15em solid #ff9d19;
   white-space: nowrap;
-  margin: 50px auto;
+  margin: 10px auto;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 
   @keyframes typing {
@@ -153,7 +153,7 @@ export const Arrow = styled.a`
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  bottom: 60px;
+  bottom: 40px;
   animation: downward 1s infinite alternate;
 
   @keyframes downward {
