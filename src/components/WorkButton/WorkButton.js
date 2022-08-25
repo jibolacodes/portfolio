@@ -12,6 +12,8 @@ export const Container = styled.div`
   right: 0;
   margin: auto;
 
+  z-index: 1000;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;

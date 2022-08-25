@@ -14,8 +14,10 @@ const Education = ({ schools, jobs }) => (
         <h1 className="section--title">Training</h1>
         <p className="section--title--absolute">Training</p>
       </Title>
-      <Certificates schools={schools}/>
-      <Jobs jobs={jobs}/>
+      <section>
+        <Certificates schools={schools} />
+        <Jobs jobs={jobs} />
+      </section>
     </Content>
   </Wrapper>
 );

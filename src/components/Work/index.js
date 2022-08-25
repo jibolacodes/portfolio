@@ -1,10 +1,13 @@
 import React from "react";
 
 // Markup
-import { Container, Image, Info, Text, Stack } from "./Work.style";
+import { Container, Image, Button, Info, Text, Stack } from "./Work.style";
 
 // Components
 import WorkButton from "../WorkButton";
+
+// Images
+import { UilFocusAdd } from '@iconscout/react-unicons'
 
 const Work = ({
   handleClick,
@@ -16,11 +19,18 @@ const Work = ({
   <Container>
     {projects.map((project, id) => (
       <Image key={project.id}>
-        <img
-          src={`../../images/${project.image}`}
-          alt={project.title}
-          onClick={() => handleClick(project.id, pullProjectData(project))}
-        />
+        <div className="img">
+          <img src={`../../images/${project.logo}`} alt={project.title} />
+        </div>
+        <Button>
+          <button
+            type="button"
+            class="btn"
+            onClick={() => handleClick(project.id, pullProjectData(project))}
+          >
+            <UilFocusAdd className="icon"/>
+          </button>
+        </Button>
         <Info>
           <Text>
             <p>{project.title}</p>
@@ -31,6 +41,7 @@ const Work = ({
             ))}
           </Stack>
         </Info>
+
         {project.isButton && (
           <WorkButton
             handleClose={handleClose}

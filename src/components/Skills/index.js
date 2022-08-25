@@ -7,13 +7,15 @@ import { Section, Logo } from "./Skills.style";
 import "animate.css";
 
 const logos = [
-  "html",
-  "css",
-  "javascript",
   "react",
   "python",
+  "javascript",
+  "django",
   "api",
   "sass",
+  "figma",
+  "git",
+  "sql"
 ];
 
 

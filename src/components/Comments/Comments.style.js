@@ -58,8 +58,9 @@ export const Person = styled.section`
 
   .image {
     img {
-      width: 80px;
-      height: 80px;
+      object-fit: cover;
+      width: 130px;
+      height: 130px;
       clip-path: circle();
     }
   }

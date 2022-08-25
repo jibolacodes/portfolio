@@ -153,7 +153,7 @@ export const Arrow = styled.a`
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  bottom: 30px;
+  bottom: 60px;
   animation: downward 1s infinite alternate;
 
   @keyframes downward {

@@ -22,10 +22,19 @@ export const Image = styled.div`
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
-  img {
+  .img {
     width: 335px;
-    height: 270px;
-    border-radius: 5px;
+    height: 180px;
+    background: var(--white);
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      border-radius: 5px;
+      object-fit: contain;
+    }
 
     @media screen and (max-width: 374px) {
       width: 300px;
@@ -33,12 +42,44 @@ export const Image = styled.div`
   }
 `;
 
+export const Button = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+
+  .btn {
+    color: var(--white);
+    background-color: var(--bg-color);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    .icon {
+      font-weight: 800;
+    }
+
+    :hover {
+      border: 1px solid var(--bg-color);
+      background-color: var(--white);
+      color: var(--bg-color);
+    }
+  }
+
+
+`;
+
 export const Info = styled.div`
-  background-color: var(--white);
+  background-color: var(--dark-text-color);
   width: 100%;
   height: auto;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
@@ -50,7 +91,7 @@ export const Info = styled.div`
 
 export const Text = styled.div`
   p {
-    color: var(--dark-text-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 600;
     letter-spacing: 2px;

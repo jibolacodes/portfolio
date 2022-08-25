@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
         --bg-color : #00C0C0;
         --white : #fff;
+        --white-gloss: rgba(255, 255, 255, 0.5);
         --dark-text-color: #343a40;
         --grey-text-color: #6c757d;
         --text-border-color: #dee2e6;
@@ -34,5 +35,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     main {
         position: relative;
+        font-size: var(--font-size);
     }
 `;

@@ -21,15 +21,16 @@ const About = () => (
         <Description>
           <h3>Front-End Developer</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-            quae. Voluptatibus, autem pariatur porro ex consectetur deleniti
-            quod, debitis quia adipisci atque corrupti.
+            Hello there, I am a front-end web developer who loves to create web
+            applications using React.js. When I am not glued to my computer, I
+            spend my time reading, Watching football, seeing a movie or having
+            great conversations with people.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-            quae. Voluptatibus, autem pariatur porro ex consectetur deleniti
-            quod, debitis quia adipisci atque corrupti.
+            I also produce, mix and master music for music artistes, movies and
+            other industries where audio is being used.
           </p>
+          <p>I am from Nigeria and I'm glad you are on my page.</p>
           <Socials>
             <Button>
               <a href="#contact me">Contact Me</a>

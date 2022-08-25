@@ -19,16 +19,18 @@ export const Description = styled.div`
   h3 {
     margin-bottom: 12px;
     color: var(--dark-text-color);
-    font-size: 1.3em;
+    font-size: larger;
   }
   p {
     color: var(--dark-text-color);
     line-height: 24px;
-    font-size: var(--font-size);
     margin-bottom: 12px;
   }
 
   @media only screen and (min-width: 1023px) {
+    h3 {
+      font-size: 1.6rem;
+    }
     width: 50%;
     margin: 0 15px;
   }

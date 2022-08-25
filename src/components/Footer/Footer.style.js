@@ -44,7 +44,6 @@ export const Socials = styled.div`
 export const Text = styled.section`
   p {
     color: var(--white);
-    letter-spacing: 2px;
 
     .emoji {
       font-size: 1.3em;

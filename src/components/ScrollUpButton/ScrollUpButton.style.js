@@ -8,7 +8,7 @@ export const Wrapper = styled.button`
   position: fixed;
   bottom: 0;
   right: 10px;
-  top: 90vh;
+  top: 80vh;
   height: fit-content;
 
   cursor: pointer;
