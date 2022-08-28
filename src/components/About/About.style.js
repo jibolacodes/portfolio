@@ -5,7 +5,7 @@ export const Hero = styled.img`
   border-radius: 5px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 426px) {
+  @media only screen and (min-width: 426px) and (max-width:1022px) {
     width: 400px;
   }
   @media only screen and (min-width: 1023px) {
@@ -27,6 +27,8 @@ export const Description = styled.section`
     margin-bottom: 12px;
     font-size: var(--font-size);
   }
+
+
 
   @media only screen and (min-width: 1023px) {
     width: 50%;
