@@ -28,10 +28,7 @@ export const Description = styled.section`
     font-size: var(--font-size);
   }
 
-  @media only screen and (min-width: 423px) {
-    h3 {
-      /* font-size: 1.6rem; */
-    }
+  @media only screen and (min-width: 1023px) {
     width: 50%;
     margin: 0 15px;
   }
