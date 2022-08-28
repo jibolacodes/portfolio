@@ -19,7 +19,7 @@ export const Description = styled.section`
   h3 {
     margin-bottom: 12px;
     color: var(--dark-text-color);
-    font-size: 24px;
+    font-size: 1.5em;
   }
   p {
     color: var(--dark-text-color);
@@ -96,7 +96,7 @@ export const Socials = styled.div`
       margin-right: 10px;
       text-decoration: none;
       color: var(--bg-color);
-      font-size: 16px;
+      font-size: var(--font-size);
       font-family: var(--font-family);
     }
 

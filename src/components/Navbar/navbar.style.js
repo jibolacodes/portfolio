@@ -35,7 +35,7 @@ export const Logo = styled.div`
     font-family: var(--font-family);
     text-align: center;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.6em;
     text-transform: uppercase;
     -webkit-text-stroke: 2px var(--bg-color);
     color: var(--white);
@@ -47,7 +47,7 @@ export const Logo = styled.div`
 
   @media screen and (min-width: 1024px) {
     h1 {
-      font-size: 48px;
+      font-size: 2.5em;
     }
   }
 `;
@@ -74,7 +74,7 @@ export const NavLinks = styled.nav`
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   @media screen and (min-width: 426px) and (max-width: 1023px) {
-    width: 30%;
+    /* width: 30%; */
   }
 
   ul {

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: var(--bg-color);
-  padding: 10px;
   min-height: 100vh;
   max-width: 100vw;
   display: flex;
@@ -153,7 +152,7 @@ export const Arrow = styled.a`
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  bottom: 40px;
+  bottom: 70px;
   animation: downward 1s infinite alternate;
 
   @keyframes downward {

@@ -30,7 +30,7 @@ export const Socials = styled.div`
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    /* color: var(--bg-color); */
+    color: var(--bg-color);
     font-family: var(--font-family);
 
     :hover {
@@ -40,7 +40,7 @@ export const Socials = styled.div`
     }
   }
 
-  .btn-github {
+  /* .btn-github {
     color: #24292f;
   }
   .btn-linkedin { 
@@ -48,7 +48,7 @@ export const Socials = styled.div`
   }
   .btn-twitter {
     color: rgb(29, 155, 240);
-  }
+  } */
 `;
 
 export const Text = styled.section`
