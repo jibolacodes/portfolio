@@ -14,9 +14,10 @@ export const Form = styled.form`
     transition: 0.3s;
 
     :hover,
-    :active {
+    :active{
       outline: none;
       border: 2px solid var(--bg-color);
+      background: var(--white);
     }
   }
 

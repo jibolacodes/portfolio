@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Training, Section, Bullet, Description} from  "../Education/Education.style"
+import { Training, Section, Bullet, Description} from  "../Training/Training.style"
 
 const Jobs = ({ jobs }) => (
   <Training>

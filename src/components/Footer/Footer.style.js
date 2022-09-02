@@ -36,19 +36,9 @@ export const Socials = styled.div`
     :hover {
       background-color: var(--bg-color);
       color: var(--white);
-      border: 2px solid var(--white);
+      border: 1px solid var(--white);
     }
   }
-
-  /* .btn-github {
-    color: #24292f;
-  }
-  .btn-linkedin { 
-    color: #0a66c2;
-  }
-  .btn-twitter {
-    color: rgb(29, 155, 240);
-  } */
 `;
 
 export const Text = styled.section`

@@ -5,10 +5,10 @@ export const Hero = styled.img`
   border-radius: 5px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 426px) and (max-width:1022px) {
+  @media only screen and (min-width: 426px) and (max-width: 1023px) {
     width: 400px;
   }
-  @media only screen and (min-width: 1023px) {
+  @media only screen and (min-width: 1024px) {
     width: 360px;
     margin: 0 15px;
   }
@@ -17,40 +17,37 @@ export const Hero = styled.img`
 export const Description = styled.section`
   margin-top: 24px;
   h3 {
-    margin-bottom: 12px;
     color: var(--dark-text-color);
-    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-size: 1.3em;
   }
   p {
     color: var(--dark-text-color);
     line-height: 28px;
     margin-bottom: 12px;
-    font-size: var(--font-size);
   }
 
-
-
-  @media only screen and (min-width: 1023px) {
+  @media only screen and (min-width: 1024px) {
     width: 50%;
     margin: 0 15px;
   }
 `;
 
 export const Button = styled.button`
-  padding: 0 20px;
-  height: 44px;
+  color: var(--bg-color);
   font-size: var(--font-size);
   font-family: var(--font-family);
   border: 1px solid var(--bg-color);
   background-color: var(--white);
+  padding: 0 20px;
+  height: 44px;
   border-radius: 30px;
   margin: 20px auto;
-  color: var(--bg-color);
   cursor: pointer;
   transition: 0.3s;
   display: none;
 
-  @media only screen and (min-width: 1023px) {
+  @media only screen and (min-width: 1024px) {
     display: block;
   }
 
@@ -75,34 +72,31 @@ export const Socials = styled.div`
   align-items: center;
 
   .btn {
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
     display: grid;
     grid-template-columns: auto auto;
     place-items: center;
-
     margin: 10px 20px 0 0;
-
     background: none;
-    border: none;
-    color: var(--bg-color);
-    border: 1px solid var(--bg-color);
     padding: 5px 10px;
-    border-radius: 5px;
 
-    @media only screen and (min-width: 1023px) {
+    @media only screen and (min-width: 1024px) {
       margin: 0 0 0 20px;
     }
 
     a {
-      margin-right: 10px;
-      text-decoration: none;
       color: var(--bg-color);
       font-size: var(--font-size);
       font-family: var(--font-family);
+      margin-right: 10px;
+      text-decoration: none;
     }
 
     :hover {
-      background-color: var(--bg-color);
       color: var(--white);
+      background-color: var(--bg-color);
 
       a {
         color: var(--white);

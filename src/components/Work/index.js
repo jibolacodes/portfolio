@@ -25,7 +25,7 @@ const Work = ({
         <Button>
           <button
             type="button"
-            class="btn"
+            className="btn"
             onClick={() => handleClick(project.id, pullProjectData(project))}
           >
             <UilFocusAdd className="icon"/>
@@ -37,7 +37,7 @@ const Work = ({
           </Text>
           <Stack>
             {project.stack.map((icon, id) => (
-              <img src={`../../images/${icon}`} alt={icon} />
+              <img src={`../../images/${icon}`} alt={icon} key={id} />
             ))}
           </Stack>
         </Info>

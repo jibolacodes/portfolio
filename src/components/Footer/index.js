@@ -9,7 +9,7 @@ import { UilLinkedin } from "@iconscout/react-unicons";
 import { UilTwitter } from "@iconscout/react-unicons";
 
 const Footer = () => (
-  <Wrapper>
+  <Wrapper id="footer">
     <Content>
       <Socials>
         <a

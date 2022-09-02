@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 export const GlobalStyles = createGlobalStyle`
     :root {
         --padding: 215px 30px;
@@ -8,6 +7,8 @@ export const GlobalStyles = createGlobalStyle`
 
 
         --bg-color : #00C0C0;
+        --bg-color : #A86000;
+        --bg-color : #09416C;
         --white : #fff;
         --white-gloss: rgba(255, 255, 255, 0.5);
         --dark-text-color: #343a40;
@@ -16,8 +17,7 @@ export const GlobalStyles = createGlobalStyle`
         
         --font-logo: 'Aboreto', cursive;
         --font-family: 'Poppins', sans-serif;
-        --font-family-absolute: 'Poppins', sans-serif;
-        --font-size: 14px;
+        --font-size: 16px;
 
         --font-weight-bold: 600;
 

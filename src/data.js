@@ -62,8 +62,15 @@ export const projectsData = [
     ],
     liveLink: "https://google.com",
     github: "https://github.com",
-    stack: ["css.png", "git.png", "django.png", "html.png", "javascript.png", "figma.png"],
-  }
+    stack: [
+      "css.png",
+      "git.png",
+      "django.png",
+      "html.png",
+      "javascript.png",
+      "figma.png",
+    ],
+  },
 ];
 
 export const testimonials = [
@@ -72,14 +79,14 @@ export const testimonials = [
     role: "IT Lead",
     image: "femi-osholake.jpeg",
     comment:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti."
-  },  
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti.",
+  },
   {
     name: "Claudius Odeyemi",
     role: "Creative Designer",
     image: "claudius-odeyemi.jpeg",
     comment:
-    "Ajibola's creative ideas, ability to pay attention to details, and overall style is second to none. He is incredibly polite, a team player, prompt and thorough."
+      "Ajibola's creative ideas, ability to pay attention to details, and overall style is second to none. He is incredibly polite, a team player, prompt and thorough.",
   },
   {
     name: "Third Person",
@@ -87,5 +94,37 @@ export const testimonials = [
     image: "portfolio_sample_3.jpg",
     comment:
       "Deleniti quod, debitis quia adipisci atque corrupti.Lorem ipsum dolor sit,",
+  },
+];
+
+export const skillLogos = [
+  {
+    skill: "front-end",
+    tools: [
+      "javascript",
+      "typescript",
+      "react",
+      "redux",
+      "sass",
+      "tailwind",
+      "bootstrap",
+    ],
+  },
+  {
+    skill: "back-end",
+    tools: [
+      "node js",
+      "express",
+      "postman",
+      "python",
+      "django",
+      "flask",
+      "postgresql",
+      "sqlite",
+    ],
+  },
+  {
+    skill: "others",
+    tools: ["api", "git", "vscode", "figma"],
   },
 ];

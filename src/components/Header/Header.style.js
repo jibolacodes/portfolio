@@ -25,8 +25,7 @@ export const Content = styled.div`
 `;
 
 export const UserImg = styled.img`
-  /* margin-bottom: 20px; */
-  width: 240px;
+  width: 180px;
   clip-path: circle();
 
   @media only screen and (min-width: 1023px) {
@@ -48,12 +47,12 @@ export const Text = styled.div`
   margin-bottom: 40px;
 
   h1 {
+    color: var(--bg-color);
+    -webkit-text-stroke: 2px var(--white);
     font-family: var(--font-family-absolute);
     font-weight: 800;
     font-size: 2.6em;
     letter-spacing: 4px;
-    color: var(--bg-color);
-    -webkit-text-stroke: 2px var(--white);
 
     @media only screen and (min-width: 1023px) {
       font-size: 3rem;
@@ -61,18 +60,18 @@ export const Text = styled.div`
   }
 
   h3 {
+    color: var(--white);
     margin-bottom: 10px;
     font-weight: 400;
-    color: var(--white);
   }
 `;
 
 export const AnimatedText = styled.div`
+  font-family: var(--font-family);
+  color: var(--white);
   max-width: fit-content;
-  font-family: var(--font-family-absolute);
   font-weight: 600;
   font-size: 1.2em;
-  color: var(--white);
   overflow: hidden;
   border-right: 0.15em solid #ff9d19;
   white-space: nowrap;
@@ -109,16 +108,16 @@ export const AnimatedText = styled.div`
 `;
 
 export const DownloadBtn = styled.div`
+  border: 1px solid var(--white);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--white);
   border-radius: 24px;
   width: fit-content;
   padding: 12px 16px;
-  margin: 1rem auto;
+  margin: 2rem auto;
   transition: 0.4s;
-  color: var(--white);
 
   .download-icon {
     width: 20px;
@@ -126,16 +125,16 @@ export const DownloadBtn = styled.div`
   }
 
   a {
+    color: var(--white);
     text-decoration: none;
     font-weight: 500;
-    color: var(--white);
     letter-spacing: 2px;
     margin-left: 10px;
   }
 
   &:hover {
-    background-color: var(--white);
     color: var(--bg-color);
+    background-color: var(--white);
 
     a {
       color: var(--bg-color);

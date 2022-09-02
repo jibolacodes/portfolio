@@ -60,4 +60,8 @@ export const Description = styled.div`
       font-size: smaller;
     }
   }
+  
+  p {
+    line-height: 24px;
+  }
 `;

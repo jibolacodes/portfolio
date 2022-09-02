@@ -14,7 +14,6 @@ const Comments = ({ testimonials }) => {
       } else {
         setIndex(0);
       }
-    console.log(index);
     }, 8000);
   }, [index]); 
 
@@ -32,7 +31,7 @@ const Comments = ({ testimonials }) => {
             const { name, role, image, comment } = item;
             return (
               index === i && (
-                <div className="carousel">
+                <div className="carousel" key={i}>
                   <div className="quote-left">
                     <p>"</p>
                   </div>

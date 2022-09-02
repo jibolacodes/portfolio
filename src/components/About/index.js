@@ -5,7 +5,6 @@ import { Wrapper, Content, Title } from "../../PageStyle";
 import { Hero, Description, Button, Socials } from "./About.style";
 
 // Image
-import userImg from "../../images/jibolacodes_2.jpg";
 import { UilGithub } from "@iconscout/react-unicons";
 import { UilLinkedin } from "@iconscout/react-unicons";
 
@@ -17,14 +16,14 @@ const About = () => (
         <p className="section--title--absolute">about</p>
       </Title>
       <div className="flex__container">
-        <Hero src={userImg} alt="user image" />
+        <Hero src="../../images/jibolacodes.jpg" alt="user image" />
         <Description>
-          <h3>Front-End Developer</h3>
+          <h3>Full-Stack Developer</h3>
           <p>
-            Hello there, I am a front-end web developer who loves to create web
-            applications using React.js. When I am not glued to my computer, I
-            spend my time reading a book, watching football, seeing a movie or having
-            great conversations with people.
+            Hello there, I am a full-stack developer who loves to create web
+            applications. When I am not glued to my computer, I
+            spend my time reading a book, watching football, seeing a movie or
+            having great conversations with people.
           </p>
           <p>
             I also produce, mix and master music for music artistes, movies and
@@ -35,7 +34,7 @@ const About = () => (
             <Button>
               <a href="#contact me">Contact Me</a>
             </Button>
-            <button class="btn btn-github">
+            <button className="btn btn-github">
               <a
                 href="https://github.com/jibolacodes"
                 target="_blank"
@@ -45,7 +44,7 @@ const About = () => (
               </a>
               <UilGithub />
             </button>
-            <button class="btn btn-github">
+            <button className="btn btn-github">
               <a
                 href="https://www.linkedin.com/in/ajibola-akindunbi"
                 target="_blank"

@@ -5,9 +5,9 @@ import { Wrapper, Content, Title } from "../../PageStyle";
 // import { Training, Section, Description, Bullet } from "./Education.style";
 
 import Certificates from "../Certificates";
-import Jobs from "../Jobs";
+import Experience from "../Experience";
 
-const Education = ({ schools, jobs }) => (
+const Training = ({ schools, jobs }) => (
   <Wrapper id="training">
     <Content>
       <Title>
@@ -16,10 +16,10 @@ const Education = ({ schools, jobs }) => (
       </Title>
       <section>
         <Certificates schools={schools} />
-        <Jobs jobs={jobs} />
+        <Experience jobs={jobs} />
       </section>
     </Content>
   </Wrapper>
 );
 
-export default Education;
+export default Training;

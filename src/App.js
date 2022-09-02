@@ -5,7 +5,7 @@ import { GlobalStyles } from "./GlobalStyles";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Education from "./components/Education";
+import Training from "./components/Training";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Comments from "./components/Comments";
@@ -115,7 +115,7 @@ function App() {
       {scrollHeight > 15 ? <Navbar show={show} setShow={setShow} /> : null}
       <Header windowHeight={scrollHeight} />
       <About />
-      <Education schools={schoolsData} jobs={jobsData} />
+      <Training schools={schoolsData} jobs={jobsData} />
       <Skills />
       <Portfolio
         handleClick={handleClick}
