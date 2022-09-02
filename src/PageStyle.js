@@ -42,8 +42,8 @@ export const Title = styled.section`
     font-weight: 900;
     font-size: 3.5em;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px var(--text-border-color);
-    color: var(--white);
+    -webkit-text-stroke: 1px var(--dark-text-color);
+    color: var(--bg-color);
 
     @media only screen and (min-width: 1023px) {
       font-size: 8em;
@@ -56,11 +56,12 @@ export const Title = styled.section`
     font-size: 1.8em;
     font-weight: 900;
     position: absolute;
-    bottom: 16px;
+    bottom: 22px;
     margin: auto;
     left: 10px;
     right: 0;
     text-align: center;
+    display: none;
 
     @media only screen and (min-width: 1023px) {
       font-size: 3em;

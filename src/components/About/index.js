@@ -62,3 +62,11 @@ const About = () => (
 );
 
 export default About;
+
+
+// --bg-color: #F6E4CE;
+// --bg-color: #15171D;
+// --bg-color: #5CCA79;
+// --bg-color : #A86000;
+// --bg-color : #314214;
+// --bg-color : #5CCA79;
