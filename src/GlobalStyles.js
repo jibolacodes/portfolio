@@ -11,21 +11,21 @@ export const GlobalStyles = createGlobalStyle`
         
 
         --bg-color : #00C0C0;
-        --bg-color : #A86000;
         --bg-color : #09416C;
         --bg-color : #5CCA79;
         --bg-color : #314214;
         --bg-color : #749E52;
+        --bg-color : #A86000;
         
         
         --white : #fff;
-        --white-gloss: rgba(255, 255, 255, 0.5);
         --dark-text-color: #343a40;
         --grey-text-color: #6c757d;
         --text-border-color: #dee2e6;
         
         --font-logo: 'Aboreto', cursive;
         --font-family: 'Poppins', sans-serif;
+        --font-family: cursive;
         --font-size: 16px;
 
         --font-weight-bold: 600;

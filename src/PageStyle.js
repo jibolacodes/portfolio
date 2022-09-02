@@ -37,12 +37,12 @@ export const Title = styled.section`
   margin-bottom: 24px;
 
   .section--title {
-    font-family: var(--font-family-absolute);
+    font-family: var(--font-family);
     text-align: center;
     font-weight: 900;
     font-size: 3.5em;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px #dee2e6;
+    -webkit-text-stroke: 1px var(--text-border-color);
     color: var(--white);
 
     @media only screen and (min-width: 1023px) {
@@ -53,12 +53,12 @@ export const Title = styled.section`
     color: var(--bg-color);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-weight: 900;
     position: absolute;
-    bottom: 22px;
+    bottom: 16px;
     margin: auto;
-    left: 0;
+    left: 10px;
     right: 0;
     text-align: center;
 

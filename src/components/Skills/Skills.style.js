@@ -54,7 +54,7 @@ export const Filters = styled.div`
     border-radius: 5px;
     color: var(--white);
     font-family: var(--font-family);
-    font-size: 0.75em;
+    /* font-size: 0.75em; */
     cursor: pointer;
     text-transform: uppercase;
 
