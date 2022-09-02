@@ -14,8 +14,8 @@ export const GlobalStyles = createGlobalStyle`
         --bg-color : #A86000;
         --bg-color : #09416C;
         --bg-color : #5CCA79;
-        ${'' /* --bg-color : #314214; */}
-        ${'' /* --bg-color : #749E52; */}
+        --bg-color : #314214;
+        --bg-color : #749E52;
         
         
         --white : #fff;
