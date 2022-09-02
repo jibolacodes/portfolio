@@ -14,7 +14,6 @@ export const GlobalStyles = createGlobalStyle`
         --text-border-color: #dee2e6;
         
         --font-family: 'Poppins', sans-serif;
-        --font-family: 'Quicksand', sans-serif;
         --font-size: 16px;
 
         --font-weight-bold: 600;

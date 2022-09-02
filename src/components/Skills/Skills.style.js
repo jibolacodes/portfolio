@@ -47,14 +47,13 @@ export const Filters = styled.div`
   margin-bottom: 30px;
 
   .filter-btn {
-    margin: 0 5px;
+    margin: 0 4px;
     padding: 10px;
     background: var(--bg-color);
     border: none;
     border-radius: 5px;
     color: var(--white);
     font-family: var(--font-family);
-    /* font-size: 0.75em; */
     cursor: pointer;
     text-transform: uppercase;
 

@@ -21,14 +21,14 @@ export const Container = styled.div`
 
   .closeBtn {
     align-self: flex-end;
-    color: red;
+    color: var(--white);
     width: 30px;
     height: 30px;
     cursor: pointer;
     transition: 0.3s;
 
     :hover {
-      color: var(--white);
+      color: red;
     }
   }
 

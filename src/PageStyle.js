@@ -40,13 +40,14 @@ export const Title = styled.section`
     font-family: var(--font-family);
     text-align: center;
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 2.8em;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px var(--dark-text-color);
+    -webkit-text-stroke: 2px var(--grey-text-color);
     color: var(--bg-color);
+    letter-spacing: 1px;
 
     @media only screen and (min-width: 1023px) {
-      font-size: 8em;
+      font-size: 5em;
     }
   }
   .section--title--absolute {
