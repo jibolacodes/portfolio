@@ -25,7 +25,6 @@ export const GlobalStyles = createGlobalStyle`
         
         --font-logo: 'Aboreto', cursive;
         --font-family: 'Poppins', sans-serif;
-        --font-family: cursive;
         --font-size: 16px;
 
         --font-weight-bold: 600;
