@@ -78,7 +78,7 @@ export const Socials = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     place-items: center;
-    margin: 10px 20px 0 0;
+    margin: 15px 25px 0 0;
     background: none;
     padding: 5px 10px;
 

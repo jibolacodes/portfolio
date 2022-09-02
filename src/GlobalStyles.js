@@ -14,6 +14,8 @@ export const GlobalStyles = createGlobalStyle`
         --text-border-color: #dee2e6;
         
         --font-family: 'Poppins', sans-serif;
+        --font-family: 'Quicksand', sans-serif;
+        --font-logo: 'Share Tech Mono', monospace;
         --font-size: 16px;
 
         --font-weight-bold: 600;

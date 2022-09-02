@@ -14,8 +14,8 @@ export const Section = styled.section`
 `;
 
 export const Logo = styled.div`
-  width: 120px;
-  height: 140px;
+  width: 110px;
+  height: 110px;
   display: grid;
   place-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -24,7 +24,7 @@ export const Logo = styled.div`
   padding: 10px;
 
   img {
-    width: 60px;
+    width: 40px;
   }
 
   .underline {
