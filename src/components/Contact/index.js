@@ -13,51 +13,58 @@ const Contact = ({ handleChange, formData, handleSubmit }) => (
         <h1 className="section--title">Contact</h1>
         <p className="section--title--absolute">Contact</p>
       </Title>
-      <Message>
-        {formData.isSent && <p className="success">Message Sent</p>}
-        {/* <p className="failure">Message Failed</p> */}
-      </Message>
-      <Form>
-        <input
-          type="text"
-          name="firstname"
-          placeholder="First Name"
-          onChange={handleChange}
-          value={formData.firstname}
-        />
-        <input
-          type="text"
-          name="lastname"
-          placeholder="Last Name"
-          onChange={handleChange}
-          value={formData.lastname}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-          value={formData.email}
-        />
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          onChange={handleChange}
-          value={formData.subject}
-        />
-        <textarea
-          name="message"
-          placeholder="Message"
-          onChange={handleChange}
-          value={formData.message}
-          rows="8"
-          columns="1"
-        />
-        <button type="submit" onClick={handleSubmit}>
-          Send Message
-        </button>
-      </Form>
+      {formData.isSent ? (
+        <Message>
+          <section>
+            <p>
+              Hi {formData.firstname} 😊, Thanks for reaching out. 
+              I have received your message.. I look forward to working with you.💪
+            </p>
+          </section>
+        </Message>
+      ) : (
+        <Form>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+            onChange={handleChange}
+            value={formData.firstname}
+          />
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+            onChange={handleChange}
+            value={formData.lastname}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            onChange={handleChange}
+            value={formData.email}
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            onChange={handleChange}
+            value={formData.subject}
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            onChange={handleChange}
+            value={formData.message}
+            rows="8"
+            columns="1"
+          />
+          <button type="submit" onClick={handleSubmit}>
+            Send Message
+          </button>
+        </Form>
+      )}
     </Content>
   </Wrapper>
 );

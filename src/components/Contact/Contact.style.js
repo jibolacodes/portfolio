@@ -14,7 +14,7 @@ export const Form = styled.form`
     transition: 0.3s;
 
     :hover,
-    :active{
+    :active {
       outline: none;
       border: 2px solid var(--bg-color);
       background: var(--white);
@@ -63,27 +63,16 @@ export const Form = styled.form`
 `;
 
 export const Message = styled.div`
-  position: absolute;
-  top: 75px;
-  z-index: 1;
+  height: 400px;
+  section {
+    background-color: var(--bg-color);
+    padding: 60px 20px;
 
-  @media screen and (min-width: 1024px) {
-    top: 170px;
-  }
-
-  .success,
-  .failure {
-    padding: 5px 10px;
-    color: var(--white);
-    border-radius: 5px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  .success {
-    background-color: green;
-  }
-  .failure {
-    background-color: crimson;
+    p {
+      color: var(--white);
+      text-align: center;
+      font-size: larger;
+      line-height: 36px;
+    }
   }
 `;

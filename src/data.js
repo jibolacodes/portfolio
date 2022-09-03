@@ -63,24 +63,22 @@ export const projectsData = [
     liveLink: "https://google.com",
     github: "https://github.com",
     stack: [
-      "css.png",
-      "git.png",
-      "django.png",
       "html.png",
+      "css.png",
       "javascript.png",
-      "figma.png",
+      "django.png",
     ],
   },
 ];
 
 export const testimonials = [
-  {
-    name: "Femi Osholake",
-    role: "IT Lead",
-    image: "femi-osholake.jpeg",
-    comment:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti.",
-  },
+  // {
+  //   name: "Femi Osholake",
+  //   role: "IT Lead",
+  //   image: "femi-osholake.jpeg",
+  //   comment:
+  //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti.",
+  // },
   {
     name: "Claudius Odeyemi",
     role: "Creative Designer",
@@ -88,13 +86,13 @@ export const testimonials = [
     comment:
       "Ajibola's creative ideas, ability to pay attention to details, and overall style is second to none. He is incredibly polite, a team player, prompt and thorough.",
   },
-  {
-    name: "Third Person",
-    role: "Content Creator",
-    image: "portfolio_sample_3.jpg",
-    comment:
-      "Deleniti quod, debitis quia adipisci atque corrupti.Lorem ipsum dolor sit,",
-  },
+  // {
+  //   name: "Third Person",
+  //   role: "Content Creator",
+  //   image: "portfolio_sample_3.jpg",
+  //   comment:
+  //     "Deleniti quod, debitis quia adipisci atque corrupti.Lorem ipsum dolor sit,",
+  // },
 ];
 
 export const skillLogos = [

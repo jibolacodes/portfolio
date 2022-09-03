@@ -35,4 +35,15 @@ export const GlobalStyles = createGlobalStyle`
         position: relative;
         font-size: var(--font-size);
     }
+    button, p, span, li, input, textarea {
+        font-weight: 500;
+    }
 `;
+
+// --bg-color: #F6E4CE;
+// --bg-color: #15171D;
+// --bg-color: #5CCA79;
+// --bg-color : #A86000;
+// --bg-color : #314214;
+// --bg-color : #5CCA79;
+// --bg-color: #358B78;

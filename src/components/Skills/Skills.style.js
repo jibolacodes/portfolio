@@ -48,7 +48,14 @@ export const Filters = styled.div`
 
   .filter-btn {
     margin: 0 4px;
-    padding: 10px;
+    /* padding: 10px; */
+    height: 40px;
+    width: 100px;
+    @media only screen and (max-width: 320px) {
+      padding: 10px;
+      width: auto;
+      
+    }
     background: var(--bg-color);
     border: none;
     border-radius: 5px;
@@ -56,6 +63,13 @@ export const Filters = styled.div`
     font-family: var(--font-family);
     cursor: pointer;
     text-transform: uppercase;
+    
+
+    :hover {
+      background: var(--white);
+      color: var(--bg-color);
+      border: 1px solid var(--bg-color);
+    }
 
     @media only screen and (min-width: 1024px) {
       margin: 0 10px;

@@ -106,7 +106,7 @@ function App() {
         message: "",
         isSent: false,
       }));
-    }, 3000);
+    }, 12000);
   };
 
   return (

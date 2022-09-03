@@ -20,8 +20,7 @@ const About = () => (
         <Description>
           <h3>Full-Stack Developer</h3>
           <p>
-            Hello there, I am a full-stack developer who loves to create web
-            applications. When I am not glued to my computer, I
+            Hello there, I am a full-stack developer who loves to create great web applications using Javascript.When I am not glued to my computer, I
             spend my time reading a book, watching football, seeing a movie or
             having great conversations with people.
           </p>
@@ -62,11 +61,3 @@ const About = () => (
 );
 
 export default About;
-
-
-// --bg-color: #F6E4CE;
-// --bg-color: #15171D;
-// --bg-color: #5CCA79;
-// --bg-color : #A86000;
-// --bg-color : #314214;
-// --bg-color : #5CCA79;
