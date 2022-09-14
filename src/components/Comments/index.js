@@ -8,15 +8,13 @@ const Comments = ({ testimonials }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    if (testimonials.length > 1) {
-      setTimeout(() => {
-        if (index < 2) {
-          setIndex((prevIndex) => prevIndex + 1);
-        } else {
-          setIndex(0);
-        }
-      }, 8000);
-    }
+    setTimeout(() => {
+      if (index < 2) {
+        setIndex((prevIndex) => prevIndex + 1);
+      } else {
+        setIndex(0);
+      }
+    }, 8000);
   }, [index]);
 
   return (

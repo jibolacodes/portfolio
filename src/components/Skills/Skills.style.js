@@ -52,10 +52,10 @@ export const Filters = styled.div`
     height: 40px;
     width: 100px;
     @media only screen and (max-width: 320px) {
-      padding: 10px;
+      padding: 5px;
       width: auto;
-      
     }
+    
     background: var(--bg-color);
     border: none;
     border-radius: 5px;

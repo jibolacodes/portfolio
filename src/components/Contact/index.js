@@ -17,8 +17,8 @@ const Contact = ({ handleChange, formData, handleSubmit }) => (
         <Message>
           <section>
             <p>
-              Hi {formData.firstname} 😊, Thanks for reaching out. 
-              I have received your message.. I look forward to working with you.💪
+              Hi {formData.firstname}, Thanks for reaching out. I just received
+              your message.I look forward to working with you.💪😊
             </p>
           </section>
         </Message>

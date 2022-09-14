@@ -60,8 +60,8 @@ export const projectsData = [
       "portfolio_sample_3.jpg",
       "portfolio_sample_4.jpg",
     ],
-    liveLink: "https://google.com",
-    github: "https://github.com",
+    liveLink: "https://go-chunk.herokuapp.com/",
+    github: "https://github.com/zuri-training/Chunk_file_team_48",
     stack: [
       "html.png",
       "css.png",
@@ -72,27 +72,20 @@ export const projectsData = [
 ];
 
 export const testimonials = [
-  // {
-  //   name: "Femi Osholake",
-  //   role: "IT Lead",
-  //   image: "femi-osholake.jpeg",
-  //   comment:
-  //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti.",
-  // },
+  {
+    name: "Femi Osholake",
+    role: "IT Lead",
+    image: "femi-osholake.jpeg",
+    comment:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,   atque corrupti."
+  },
   {
     name: "Claudius Odeyemi",
     role: "Creative Designer",
     image: "claudius-odeyemi.jpeg",
     comment:
-      "Ajibola's creative ideas, ability to pay attention to details, and overall style is second to none. He is incredibly polite, a team player, prompt and thorough.",
-  },
-  // {
-  //   name: "Third Person",
-  //   role: "Content Creator",
-  //   image: "portfolio_sample_3.jpg",
-  //   comment:
-  //     "Deleniti quod, debitis quia adipisci atque corrupti.Lorem ipsum dolor sit,",
-  // },
+      "Ajibola's creative ideas, ability to pay attention to details, and overall style is second to none. He is incredibly polite, a team player, prompt and thorough."
+  }
 ];
 
 export const skillLogos = [
