@@ -51,22 +51,33 @@ export const jobsData = [
 export const projectsData = [
   {
     id: 0,
-    title: "Go-Chunk",
-    logo: "go-chunk-logo.png",
+    title: "Cryptoverse",
+    logo: "cryptoverse.png",
     isButton: false,
     modalPictures: [
-      "portfolio_sample_1.jpg",
-      "portfolio_sample_2.jpg",
-      "portfolio_sample_3.jpg",
-      "portfolio_sample_4.jpg",
+      "No-Image-Placeholder.svg",
     ],
-    liveLink: "https://go-chunk.herokuapp.com/",
-    github: "https://github.com/zuri-training/Chunk_file_team_48",
+    liveLink: "https://jibolacodes-cryptoverse.netlify.app/",
+    github: "https://github.com/jibolacodes/project-cryptoverse",
     stack: [
-      "html.png",
-      "css.png",
-      "javascript.png",
-      "django.png",
+      "react.png",
+      "redux.png",
+      "api.png",
+    ],
+  },
+  {
+    id: 1,
+    title: "Movie App",
+    logo: "react-movie.png",
+    isButton: false,
+    modalPictures: [
+      "No-Image-Placeholder.svg",
+    ],
+    liveLink: "https://jibolacodes-movie-db-app-cd.netlify.app/",
+    github: "https://github.com/jibolacodes/movie_db/tree/main/movie_db_app",
+    stack: [
+      "react.png",
+      "api.png",
     ],
   },
 ];

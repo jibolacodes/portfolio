@@ -65,6 +65,7 @@ export const Container = styled.div`
     height: 360px;
     border-radius: 5px;
     border: 2px solid var(--white);
+    
 
     @media screen and (max-width: 374px) {
       height: 300px;
